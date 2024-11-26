@@ -12,10 +12,7 @@ import { HiMenu } from 'react-icons/hi'
 const navigationMenu = [
   { href: '/', label: 'Home' },
   { href: '/blog', label: 'Blog' },
-  { href: '/projects', label: 'projects' },
-  { href: '/expertise', label: 'Expertise' },
-  { href: '/methodologie', label: 'Méthodologie' },
-  { href: '/prestations', label: 'Prestations' },
+  { href: '/contact', label: 'contact' },
 ]
 export default function Navigation() {
   const [open, setOpen] = useState(false)
@@ -208,14 +205,15 @@ export default function Navigation() {
                       <div className="border-t border-gray-200 px-4 py-6 sm:px-6">
                         <div>
                           <Link
-                            href="/contact"
-                            alt="Btn Contact"
+                            href="https://calendly.com/andyramaroson/30min" 
+                            alt="Btn Calendly"
+                            target='_Blank'
                             onClick={() => setOpen(false)}
                             className="block text-center text-[11.5px] tracking-2[2px] font-bold uppercase bg-gradient-to-r 
                                      from-orange-300 to-orange-500 py-3 px-5 text-[#2F2E2E] hover:text-white hover:shadow-2xl 
                                       rounded-md"
                           >
-                            Contact
+                            Calendly
                           </Link>
                         </div>
                       </div>

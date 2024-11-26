@@ -79,10 +79,10 @@ const ProjectBanner = ({
               <Image src={image} width={700} height={985} alt="hero image" />
             )}
             {/* Content Right - Stack */}
-            <BtnStack
+            {/* <BtnStack
               contentType={contentType}
               className="hidden lg:contents "
-            />
+            /> */}
           </motion.div>
 
           {/* Content Left */}
@@ -187,15 +187,11 @@ const ProjectBanner = ({
                   </Link>
                 </motion.div>
               )}
-
-              {/* Content left - stack - mobile */}
-              <BtnStack
-                contentType={contentType}
-                className="contents lg:hidden"
-              />
             </div>
           </div>
         </div>
+        {/* Content left - stack - mobile */}
+        <BtnStack contentType={contentType} className="hidden lg:contents" />
         <div className="contents md:hidden">
           <hr />
         </div>
