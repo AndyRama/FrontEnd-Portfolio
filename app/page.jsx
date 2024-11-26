@@ -1,5 +1,5 @@
-import Hero from './components/Hero'
-// import Hero1 from './components/Hero1'
+// import Hero from './components/Hero'
+import Hero1 from './components/Hero1'
 import RecentProject from './components/RecentProject'
 import RecentBlog from './components/RecentBlog'
 import Stats from './components/Stats'
@@ -108,8 +108,7 @@ const projectsData = [
 export default function Home() {
   return (
     <>
-      <Hero className="pt-32 md:pt-22 pb-22" />
-      {/* <Hero1 className="pt-32 md:pt-22 pb-22" /> */}
+      <Hero1 className="pt-32 md:pt-22 pb-22" /> 
 
       {projectsData.map((project, index) => {
         const { Component, ...props } = project
