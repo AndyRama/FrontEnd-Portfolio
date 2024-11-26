@@ -1,12 +1,8 @@
-// import Hero from './components/Hero'
 import Hero1 from './components/Hero1'
 import RecentBlog from './components/RecentBlog'
 import Subscribe from './components/Subscribe'
-import DescriptionCard from './components/DescriptionCard'
-
 import ProjectBanner from './components/project/ProjectBanner'
 import ProjectBannerR from './components/project/ProjectBannerR'
-
 
 import Express from './../public/images/Express3.png'
 import UnlcoachingImage from './../public/images/unlcoaching.png'
@@ -113,12 +109,6 @@ export default function Home() {
           />
         )
       })}
-
-      <DescriptionCard
-        className="mt-28 pb-22"
-        title="À propos de moi"
-        subTitle="quelques mots"
-      />
       <RecentBlog className="pt-14 pb-15 " />
       <Subscribe className="py-16 lg:py-32 " />
     </>
