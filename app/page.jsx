@@ -1,24 +1,17 @@
 // import Hero from './components/Hero'
 import Hero1 from './components/Hero1'
-import RecentProject from './components/RecentProject'
 import RecentBlog from './components/RecentBlog'
-import Stats from './components/Stats'
-import Client from './components/Client'
 import Subscribe from './components/Subscribe'
-import Testimonials from './components/Testimonials'
 import DescriptionCard from './components/DescriptionCard'
-import HowIworks from './components/HowIworks'
 
 import ProjectBanner from './components/project/ProjectBanner'
 import ProjectBannerR from './components/project/ProjectBannerR'
 
 
-import TeamImage from './../public/images/Team.jpg'
+import Express from './../public/images/Express3.png'
 import UnlcoachingImage from './../public/images/unlcoaching.png'
-import schoolUnlcoachingImage from './../public/images/unlcoaching2.png'
 import FilleDeLaGraceImage from './../public/images/Fille-de-la-grace2.png'
 import HomePortfolio from './../public/images/lemurianV1.png'
-
 
 const projectsData = [
   {
@@ -28,7 +21,7 @@ const projectsData = [
     time: '1 mois 1/2',
     mission: 'Client final',
     developpement: 'Full-Stack',
-    image: schoolUnlcoachingImage,
+    image: Express,
     btn1: { href: 'https://www.unlcoaching.com' },
     description: `J'ai eu l'opportunité de travailler sur divers projets stimulants qui m'ont permis d'affiner mes compétences et d'explorer 
                   les dernières technologies du web. Mon portfolio reflète mon engagement envers la création d'interfaces utilisateur intuitives et 
@@ -126,12 +119,6 @@ export default function Home() {
         title="À propos de moi"
         subTitle="quelques mots"
       />
-      <HowIworks />
-      <Stats />
-      <Client className="mt-22 pb-8" />
-      {/* <HowIWorks2/> */}
-      <RecentProject className="mt-32 pb-22" />
-      <Testimonials/>
       <RecentBlog className="pt-14 pb-15 " />
       <Subscribe className="py-16 lg:py-32 " />
     </>
