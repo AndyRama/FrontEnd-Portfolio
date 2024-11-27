@@ -59,7 +59,7 @@ const ProjectBanner = ({
   return (
     <section className={`${className}`}>
       <div className="container mx-auto px-4">
-        <div className="flex flex-col lg:flex-row-reverse lg:w-12/12 mx-auto">
+        <div className="flex flex-col xl:flex-row-reverse lg:w-12/12 mx-auto">
           {/* Content Right */}
           <motion.div
             initial={{ opacity: 0, x: 20 }}
@@ -78,16 +78,11 @@ const ProjectBanner = ({
             {image && (
               <Image src={image} width={700} height={985} alt="hero image" />
             )}
-            {/* Content Right - Stack */}
-            {/* <BtnStack
-              contentType={contentType}
-              className="hidden lg:contents "
-            /> */}
           </motion.div>
 
           {/* Content Left */}
-          <div className="lg:w-12/12 relative lg:mt-0 mb-8 lg:mb-0 lg:mr-20">
-            <div className="lg:max-w-xl mx-auto mb-10">
+          <div className="lg:w-12/12 relative lg:mt-0 mb-8 lg:mb-0  mr-0 lg:mr-48">
+            <div className="lg:max-w-lg mx-auto mb-10">
               {/* Content Left - subtitle */}
               {subTitle && (
                 <motion.span
@@ -130,7 +125,7 @@ const ProjectBanner = ({
                     transition: { delay: 0.03, duration: 0.5 },
                   }}
                   viewport={{ once: true }}
-                  className="tracking-[3px] text-[14px] mb-5 inline-block  text-[#2F2E2E]  font-bold"
+                  className="tracking-[3px] text-[14px] mb-5 inline-block  text-[#2F2E2E] font-bold"
                 >
                   {developpement} | {time} | {mission}
                 </motion.span>

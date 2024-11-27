@@ -7,7 +7,7 @@ import Image from 'next/image'
 import { BiSolidHeart } from 'react-icons/bi'
 import { FaGithub } from 'react-icons/fa'
 import IconLinkedin from './../../public/images/linkedin.svg'
-import IconMalt from './../../public/images/malt.svg'
+// import IconMalt from './../../public/images/malt.svg'
 
 
 const footerContent = {
@@ -23,29 +23,20 @@ const footerContent = {
           href: '/blog',
           label: 'Blog',
           badge: 'New',
-        },
-        {
-          href: '/contact',
-          label: 'Contact',
-        },
-     
+        },     
       ],
     },
     {
       heading: 'services',
       links: [
         {
+          href: '/contact',
+          label: 'Contact',
+        },
+        {
           href: '/projects',
           label: 'Réalisations',
           badge: 'New',
-        },
-        {
-          href: '/methodologie',
-          label: 'Methodologie',
-        },
-        {
-          href: '/expertise',
-          label: 'Expertise',
         },
       ],
     },
@@ -60,22 +51,6 @@ const footerContent = {
         {
           href: 'https://www.websitecarbon.com/website/portfolio-eta-three-93-vercel-app/',
           label: 'CO2',
-          badge: 'New',
-          target: '_blank',
-        },
-      ],
-    },
-    {
-      heading: 'Cvg',
-      links: [
-        {
-          href: '/document/privacy',
-          label: 'Privacy',
-          target: '_blank',
-        },
-        {
-          href: '/document/terms',
-          label: 'Terms',
           badge: 'New',
           target: '_blank',
         },

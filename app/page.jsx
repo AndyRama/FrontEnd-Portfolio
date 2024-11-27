@@ -11,13 +11,27 @@ import HomePortfolio from './../public/images/lemurianV1.png'
 
 const projectsData = [
   {
-    Component: ProjectBannerR,
-    subTitle: 'Application web',
-    title: 'express-depanage-plomberie.fr',
-    time: '1 mois 1/2',
+    Component: ProjectBanner,
+    subTitle: 'Site vitrine',
+    title: 'express-depannage-plomberie.fr',
+    time: '10 jrs',
     mission: 'Client final',
     developpement: 'Full-Stack',
     image: Express,
+    btn1: { href: 'express-depannage-plomberie.vercel.app' },
+    description: `J'ai eu l'opportunité de travailler sur divers projets stimulants qui m'ont permis d'affiner mes compétences et d'explorer 
+                  les dernières technologies du web. Mon portfolio reflète mon engagement envers la création d'interfaces utilisateur intuitives et 
+                  esthétiquement plaisantes.`,
+  },
+  {
+    Component: ProjectBannerR,
+    subTitle: 'Site vitrine',
+    title: 'Unlcoaching.com',
+    time: 'en cours',
+    mission: 'Client final',
+    developpement: 'Full-Stack',
+    image: UnlcoachingImage,
+    contentType: 'project',
     btn1: { href: 'https://www.unlcoaching.com' },
     description: `J'ai eu l'opportunité de travailler sur divers projets stimulants qui m'ont permis d'affiner mes compétences et d'explorer 
                   les dernières technologies du web. Mon portfolio reflète mon engagement envers la création d'interfaces utilisateur intuitives et 
@@ -40,8 +54,8 @@ const projectsData = [
   {
     Component: ProjectBannerR,
     subTitle: 'Site vitrine',
-    title: 'Unlcoaching.com',
-    time: 'en cours',
+    title: 'Unlcoaching Mvp',
+    time: '1 mois',
     mission: 'Client final',
     developpement: 'Full-Stack',
     image: UnlcoachingImage,
