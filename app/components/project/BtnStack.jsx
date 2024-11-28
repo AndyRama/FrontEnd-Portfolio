@@ -184,7 +184,7 @@ const BtnStack = ({ className, contentType }) => {
             viewport={{ once: true }}
             className=" relative rounded-md"
           >
-            <div className="pb-10 grid grid-cols-3 lg:grid-cols-6 xl:grid-cols-12 gap-4">
+            <div className="pb-10 grid grid-cols-3 lg:grid-cols-4 xl:grid-cols-12 gap-4">
               {[
                 'title1',
                 'title2',

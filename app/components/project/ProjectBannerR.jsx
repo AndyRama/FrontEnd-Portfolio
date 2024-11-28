@@ -73,7 +73,7 @@ const ProjectBanner = ({
             }}
             viewport={{ once: true }}
             style={{ y: imgScroll1 }}
-            className="z-[2] relative bg-cover bg-center mx-auto mb-8 lg:mb-0"
+            className="z-[2] relative bg-cover bg-center mx-auto mb-8 lg:mb-0 mt-10"
           >
             {image && (
               <Image src={image} width={700} height={985} alt="hero image" />
@@ -81,7 +81,7 @@ const ProjectBanner = ({
           </motion.div>
 
           {/* Content Right */}
-          <div className="xl:w-12/12 relative lg:mt-0 mb-8 lg:mb-0 lg:ml-40">
+          <div className="xl:w-12/12 relative lg:mt-0 mb-8 lg:mb-0 xl:ml-40">
             <div className="lg:max-w-xl mx-auto mb-10">
               {/* Content Right - subtitle */}
               {subTitle && (

@@ -73,7 +73,7 @@ const ProjectBanner = ({
             }}
             viewport={{ once: true }}
             style={{ y: imgScroll1 }}
-            className="z-[2] relative bg-cover bg-center lg:mb-0"
+            className="z-[2] relative bg-cover bg-center mx-auto mb-8 lg:mb-0 mt-10"
           >
             {image && (
               <Image src={image} width={700} height={985} alt="hero image" />
@@ -81,8 +81,8 @@ const ProjectBanner = ({
           </motion.div>
 
           {/* Content Left */}
-          <div className="lg:w-12/12 relative lg:mt-0 mb-8 lg:mb-0  mr-0 lg:mr-48">
-            <div className="lg:max-w-lg mx-auto mb-10">
+          <div className="xl:w-12/12 relative lg:mt-0 mb-8 lg:mb-0 mr-0 xl:mr-40 ml-10">
+            <div className="lg:max-w-xl mx-auto mb-10">
               {/* Content Left - subtitle */}
               {subTitle && (
                 <motion.span
@@ -146,6 +146,8 @@ const ProjectBanner = ({
                   {description}
                 </motion.p>
               )}
+
+              <BtnStack contentType="project" className="contents lg:hidden" />
 
               {/* Content Left - BtnAction */}
               {projectBannerContent.heading.btn.label && (
