@@ -10,6 +10,7 @@ import FilleDeLaGraceImage from './../public/images/Fille-de-la-grace2.png'
 // import FilleDeLaGraceImage1 from './../public/images/Fille-de-la-grace1.png'
 import HomePortfolio from './../public/images/home-portfolio.png'
 import HomeStoreMastuda from './../public/images/home-store.png'
+import HomeDashMastuda from './../public/images/home-dash.png'
 import HomeWealth from './../public/images/WealthHealth_1.png'
 
 
