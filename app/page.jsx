@@ -6,8 +6,8 @@ import ProjectBannerR from './components/project/ProjectBannerR'
 
 import Express from './../public/images/Express4.png'
 import UnlcoachingImage from './../public/images/unlcoaching.png'
+import UnlcoachingImage2 from './../public/images/unlcoaching2.png'
 import FilleDeLaGraceImage from './../public/images/Fille-de-la-grace2.png'
-// import FilleDeLaGraceImage1 from './../public/images/Fille-de-la-grace1.png'
 import HomePortfolio from './../public/images/home-portfolio.png'
 import HomeStoreMastuda from './../public/images/home-store.png'
 import HomeDashMastuda from './../public/images/home-dash.png'
@@ -15,21 +15,6 @@ import HomeWealth from './../public/images/WealthHealth_1.png'
 
 
 const projectsData = [
-  // {
-  //   Component: ProjectBannerR,
-  //   subTitle: 'Site vitrine',
-  //   title: 'i-doctor.fr',
-  //   time: '1 mois',
-  //   mission: 'Client Final',
-  //   developpement: 'Full-Stack',
-  //   image: UnlcoachingImage,
-  //   contentType: 'project',
-  //   btn: { href: 'https://project-pj-03.vercel.app' },
-  //   btn1: { href: 'express-depannage-plomberie.vercel.app/projects/Unlcoaching-jeremy-prat' },
-  //   description: `J'ai eu l'opportunité de travailler sur divers projets stimulants qui m'ont permis d'affiner mes compétences et d'explorer 
-  //                 les dernières technologies du web. Mon portfolio reflète mon engagement envers la création d'interfaces utilisateur intuitives et 
-  //                 esthétiquement plaisantes.`,
-  // },
   {
     Component: ProjectBanner,
     subTitle: 'Site vitrine',
@@ -81,7 +66,7 @@ const projectsData = [
     time: '1 mois',
     mission: 'Client final',
     developpement: 'Full-Stack',
-    image: UnlcoachingImage,
+    image: UnlcoachingImage2,
     contentType: 'project',
     btn: { href: 'https://www.unlcoaching.com' },
     btn1: { href: 'express-depannage-plomberie.vercel.app/projects/Unlcoaching-jeremy-prat' },
