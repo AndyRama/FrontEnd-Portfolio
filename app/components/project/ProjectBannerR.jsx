@@ -16,11 +16,11 @@ const projectBannerContent = {
     developpement: '',
     contentType: '',
     btn1: {
-      href: '#',
+      href: '',
       label: 'Demo',
     },
     btn: {
-      href: '/projects/Unlcoaching-jeremy-prat',
+      href: '',
       label: "Plus d'informations",
     },
   },

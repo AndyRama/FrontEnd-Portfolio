@@ -93,14 +93,14 @@ export default function Hero1() {
           </motion.div>
         </div>
       </div>
-      <motion.div 
+      {/* <motion.div 
         className="absolute bottom-10 left-30 transform -translate-x-1/2"
         initial={{ opacity: 0, y: -20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 1.2, duration: 0.5, repeat: Infinity, repeatType: 'reverse' }}
       >
         <p className="text-gray-600">Scroll Down ↓</p>
-      </motion.div>
+      </motion.div> */}
     </section>
   )
 }
