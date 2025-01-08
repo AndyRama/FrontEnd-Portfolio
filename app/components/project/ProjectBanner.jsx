@@ -35,6 +35,7 @@ const ProjectBanner = ({
   time,
   mission,
   developpement,
+  btn,
   btn1,
   contentType,
 }) => {
@@ -44,6 +45,7 @@ const ProjectBanner = ({
   time = time || projectBannerContent.heading.time
   mission = mission || projectBannerContent.heading.mission
   developpement = developpement || projectBannerContent.heading.developpement
+  btn = btn || projectBannerContent.heading.btn.href
   btn1 = btn1 || projectBannerContent.heading.btn1.href
   contentType = contentType || projectBannerContent.heading.contentType
 

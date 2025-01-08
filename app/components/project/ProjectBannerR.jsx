@@ -35,6 +35,7 @@ const ProjectBanner = ({
   time,
   mission,
   developpement,
+  btn,
   btn1,
   contentType,
 }) => {
@@ -45,6 +46,7 @@ const ProjectBanner = ({
   mission = mission || projectBannerContent.heading.mission
   developpement = developpement || projectBannerContent.heading.developpement
   btn1 = btn1 || projectBannerContent.heading.btn1.href
+  btn = btn || projectBannerContent.heading.btn.href
   contentType = contentType || projectBannerContent.heading.contentType
 
   const ref = useRef(null)

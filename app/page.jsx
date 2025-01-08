@@ -15,9 +15,10 @@ const projectsData = [
     subTitle: 'Site vitrine',
     title: 'express-depannage-plomberie.fr',
     time: '10 jrs',
-    mission: 'Client final',
+    mission: 'Client Final',
     developpement: 'Full-Stack',
     image: Express,
+    btn: { href: '#' },
     btn1: { href: 'express-depannage-plomberie.vercel.app' },
     description: `J'ai eu l'opportunité de travailler sur divers projets stimulants qui m'ont permis d'affiner mes compétences et d'explorer 
                   les dernières technologies du web. Mon portfolio reflète mon engagement envers la création d'interfaces utilisateur intuitives et 
@@ -27,11 +28,12 @@ const projectsData = [
     Component: ProjectBannerR,
     subTitle: 'Site vitrine',
     title: 'Unlcoaching.com',
-    time: 'en cours',
-    mission: 'Client final',
+    time: '1 mois',
+    mission: 'Client Final',
     developpement: 'Full-Stack',
     image: UnlcoachingImage,
     contentType: 'project',
+    btn: { href: '#' },
     btn1: { href: 'https://www.unlcoaching.com' },
     description: `J'ai eu l'opportunité de travailler sur divers projets stimulants qui m'ont permis d'affiner mes compétences et d'explorer 
                   les dernières technologies du web. Mon portfolio reflète mon engagement envers la création d'interfaces utilisateur intuitives et 
@@ -40,12 +42,13 @@ const projectsData = [
   {
     Component: ProjectBanner,
     subTitle: 'Site vitrine',
-    title: 'lemurian.fr',
+    title: 'Lemurian.fr',
     time: '1 mois',
     mission: 'Side Project',
     developpement: 'Full-Stack',
     image: HomePortfolio,
     contentType: 'project',
+    btn: { href: '#' },
     btn1: { href: 'https://portfolio-eta-three-93.vercel.app/' },
     description: `J'ai eu l'opportunité de travailler sur divers projets stimulants qui m'ont permis d'affiner mes compétences et d'explorer 
                   les dernières technologies du web. Mon portfolio reflète mon engagement envers la création d'interfaces utilisateur intuitives et 
@@ -54,39 +57,13 @@ const projectsData = [
   {
     Component: ProjectBannerR,
     subTitle: 'Site vitrine',
-    title: 'Unlcoaching Mvp',
+    title: 'Unlcoaching Version 1 [Mvp]',
     time: '1 mois',
     mission: 'Client final',
     developpement: 'Full-Stack',
     image: UnlcoachingImage,
     contentType: 'project',
-    btn1: { href: 'https://www.unlcoaching.com' },
-    description: `J'ai eu l'opportunité de travailler sur divers projets stimulants qui m'ont permis d'affiner mes compétences et d'explorer 
-                  les dernières technologies du web. Mon portfolio reflète mon engagement envers la création d'interfaces utilisateur intuitives et 
-                  esthétiquement plaisantes.`,
-  },
-  {
-    Component: ProjectBanner,
-    subTitle: 'Site vitrine',
-    title: 'Fille-de-la-grace.com',
-    time: 'en cours',
-    mission: 'Client final',
-    developpement: 'Full-Stack',
-    image: FilleDeLaGraceImage,
-    contentType: 'project',
-    btn1: { href: 'https://www.andyramaroson.com' },
-    description: `J'ai eu l'opportunité de travailler sur divers projets stimulants qui m'ont permis d'affiner mes compétences et d'explorer 
-                  les dernières technologies du web. Mon portfolio reflète mon engagement envers la création d'interfaces utilisateur intuitives et 
-                  esthétiquement plaisantes.`,
-  },
-  {
-    Component: ProjectBannerR,
-    subTitle: 'Site vitrine',
-    title: 'i-doctor.fr',
-    time: 'en cours',
-    mission: 'Client final',
-    developpement: 'Full-Stack',
-    image: UnlcoachingImage,
+    btn: { href: '#' },
     btn1: { href: 'https://www.unlcoaching.com' },
     description: `J'ai eu l'opportunité de travailler sur divers projets stimulants qui m'ont permis d'affiner mes compétences et d'explorer 
                   les dernières technologies du web. Mon portfolio reflète mon engagement envers la création d'interfaces utilisateur intuitives et 
@@ -101,18 +78,48 @@ const projectsData = [
     developpement: 'Full-Stack',
     image: FilleDeLaGraceImage,
     contentType: 'project',
+    btn: { href: '#' },
     btn1: { href: 'https://www.andyramaroson.com' },
     description: `J'ai eu l'opportunité de travailler sur divers projets stimulants qui m'ont permis d'affiner mes compétences et d'explorer 
                   les dernières technologies du web. Mon portfolio reflète mon engagement envers la création d'interfaces utilisateur intuitives et 
                   esthétiquement plaisantes.`,
+
+  },
+  {
+    Component: ProjectBannerR,
+    subTitle: 'Site vitrine',
+    title: 'i-doctor.fr',
+    time: 'en cours',
+    mission: 'Client final',
+    developpement: 'Full-Stack',
+    image: UnlcoachingImage,
+    btn: { href: '#' },
+    btn1: { href: 'https://www.unlcoaching.com' },
+    description: `J'ai eu l'opportunité de travailler sur divers projets stimulants qui m'ont permis d'affiner mes compétences et d'explorer 
+                  les dernières technologies du web. Mon portfolio reflète mon engagement envers la création d'interfaces utilisateur intuitives et 
+                  esthétiquement plaisantes.`,
+  },
+  {
+    Component: ProjectBanner,
+    subTitle: 'Site vitrine',
+    title: 'Fille-de-la-grace.com',
+    time: 'en cours',
+    mission: 'Client final',
+    developpement: 'Full-Stack',
+    image: FilleDeLaGraceImage,
+    contentType: 'project',
+    btn: { href: '#' },
+    btn1: { href: 'https://www.andyramaroson.com' },
+    description: `J'ai eu l'opportunité de travailler sur divers projets stimulants qui m'ont permis d'affiner mes compétences et d'explorer 
+                                les dernières technologies du web. Mon portfolio reflète mon engagement envers la création d'interfaces utilisateur intuitives et 
+                                esthétiquement plaisantes.`,
   },
 
 ]
 export default function Home() {
   return (
     <>
-      <Hero1 className="pt-32 md:pt-22 pb-22" /> 
-
+      <Hero1 className="pt-32 md:pt-22 pb-22" />
       {projectsData.map((project, index) => {
         const { Component, ...props } = project
         return (
