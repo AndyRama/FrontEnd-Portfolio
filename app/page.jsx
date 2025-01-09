@@ -12,9 +12,25 @@ import HomePortfolio from './../public/images/home-portfolio.png'
 import HomeStoreMastuda from './../public/images/home-store.png'
 import HomeDashMastuda from './../public/images/home-dash.png'
 import HomeWealth from './../public/images/WealthHealth_1.png'
+import Idoctor from './../public/images/i-doctor.png'
 
 
 const projectsData = [
+  {
+    Component: ProjectBannerR,
+    subTitle: 'Site vitrine',
+    title: 'I-doctor.fr',
+    time: 'en cours',
+    mission: 'Client Final',
+    developpement: 'Full-Stack',
+    image: Idoctor,
+    contentType: 'project',
+    btn: { href: 'https://project-pj-03.vercel.app' },
+    btn1: { href: 'express-depannage-plomberie.vercel.app/projects/Unlcoaching-jeremy-prat' },
+    description: `J'ai eu l'opportunité de travailler sur divers projets stimulants qui m'ont permis d'affiner mes compétences et d'explorer 
+                  les dernières technologies du web. Mon portfolio reflète mon engagement envers la création d'interfaces utilisateur intuitives et 
+                  esthétiquement plaisantes.`,
+  },
   {
     Component: ProjectBanner,
     subTitle: 'Site vitrine',
