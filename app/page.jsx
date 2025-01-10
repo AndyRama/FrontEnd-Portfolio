@@ -34,7 +34,7 @@ const projectsData = [
   {
     Component: ProjectBanner,
     subTitle: 'Site vitrine',
-    title: 'express-depannage-plomberie.fr',
+    title: 'express-plomberie.com',
     time: '10 jrs',
     mission: 'Client Final',
     developpement: 'Full-Stack',

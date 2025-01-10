@@ -8,7 +8,7 @@ const inter = Inter({ subsets: ['latin'] })
 
 export const metadata = {
   title: 'Andy Ramaroson | Portfolio',
-  description: 'Allier pour votre création de site web booster avec I.A',
+  description: 'Allier pour votre création de site web et intégration de service avec I.A',
   icon: {
     icon: ['favicon.icon'],
   },
