@@ -18,12 +18,12 @@ export default function Hero1() {
     <section ref={ref} className="relative min-h-screen flex items-center bg-white overflow-hidden">
       {/* Navigation Links */}
       <nav className="relative top-4 left-4 z-30 hidden lg:contents">
-        <ul className="flex flex-row rotate-90 text-gray-700">
+        <ul className="flex flex-row rotate-180 text-gray-700">
           <li>
             <Link
               href="https://www.linkedin.com/in/andyramaroson/"
               target="_blank"
-              className=" text-bold hover:text-orange-500 transition duration-300 mr-20"
+              className=" text-bold-500 hover:text-orange-500 transition duration-300 mr-20"
             >
               LinkedIn
             </Link>
@@ -32,7 +32,7 @@ export default function Hero1() {
             <Link
               href="https://github.com/andy-ramaroson"
               target="_blank"
-              className="text-bold hover:text-orange-500 transition duration-300"
+              className="text-bold-500 hover:text-orange-500 transition duration-300"
             >
               GitHub
             </Link>
@@ -45,7 +45,7 @@ export default function Hero1() {
         className="absolute inset-0 bg-[#FFB088] z-10"
         initial={{ x: '100%' }}
         animate={{
-          x: ['100%', '-100%', '100%', '65%'],
+          x: ['100%', '-100%', '100%', '67%'],
         }}
         transition={{
           duration: 4,
