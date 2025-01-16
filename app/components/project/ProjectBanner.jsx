@@ -75,7 +75,7 @@ const ProjectBanner = ({
             }}
             viewport={{ once: true }}
             style={{ y: imgScroll1 }}
-            className="z-[2] relative bg-cover bg-center mx-auto mb-8 lg:mb-0 mt-10"
+            className="z-[2] relative bg-cover bg-center mx-auto mb-8 lg:mb-0"
           >
             {image && (
               <Image src={image} width={700} height={985} alt="hero image" />
