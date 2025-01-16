@@ -29,8 +29,8 @@ const projectsData = [
     developpement: 'Full-Stack',
     image: Idoctor,
     contentType: 'project',
-    btn: { href: 'projects/Unlcoaching-jeremy-prat' },
-    btn1: { href: 'https://project-pj-03.vercel.app' },
+    btn: { href: '#' },
+    btn1: { href: '#' },
     description: `J'ai eu l'opportunité de travailler sur divers projets stimulants qui m'ont permis d'affiner mes compétences et d'explorer 
                   les dernières technologies du web. Mon portfolio reflète mon engagement envers la création d'interfaces utilisateur intuitives et 
                   esthétiquement plaisantes.`,
