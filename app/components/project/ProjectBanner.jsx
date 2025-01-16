@@ -21,7 +21,7 @@ const projectBannerContent = {
     },
     btn: {
       href: '',
-      label: "Plus d informations",
+      label: "Plus d'informations",
     },
   },
 }
@@ -185,7 +185,7 @@ const ProjectBanner = ({
                       md:tracking-[2px] font-bold uppercase bg-gradient-to-r from-orange-100 to-orange-300 py-4 px-5
                       rounded  text-gray-600 hover:bg-white hover:text-[#2F2E2E] inline-block hover:shadow-2xl mb-5 mr-5"
                     >
-                      Plus d'informations
+                      Plus d&apos;informations
                     </Link>
                   )}
                 </motion.div>
