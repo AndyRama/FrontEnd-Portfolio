@@ -71,7 +71,7 @@ export default function Navigation() {
                   weight={20}
                   height={20}
                   alt="logo andy ramaroson"
-                  className='h-[20] w-[20]'
+                  className='rounded-md w-[20px] h-[20px]'
                 />
               </span>
               {/* Name Link - content left*/}
