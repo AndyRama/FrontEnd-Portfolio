@@ -68,9 +68,9 @@ export default function Navigation() {
               <span className="my-[-10px] mx-3 hidden md:flex border rounded-full">
                 <Image
                   src={IconLogo}
-                  weight={20}
-                  height={20}
-                  alt="logo"
+                  weight={10}
+                  height={10}
+                  alt="logo andy ramaroson"
                 />
               </span>
               {/* Name Link - content left*/}
