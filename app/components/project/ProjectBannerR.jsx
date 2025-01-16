@@ -194,7 +194,7 @@ const ProjectBanner = ({
           </div>
         </div>
         {/* Content Right - stack - mobile */}
-        <BtnStack contentType="project" className="hidden lg:contents" />
+        <BtnStack contentType="" className="hidden lg:contents" />
         <div className="contents md:hidden">
           <hr />
         </div>
