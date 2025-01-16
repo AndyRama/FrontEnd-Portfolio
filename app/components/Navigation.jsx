@@ -57,7 +57,7 @@ export default function Navigation() {
 
   return (
     <div>
-      <header className="py-4 fixed w-full z-[10] bg-transparent" alt="NavBar">
+      <header className="py-4 fixed w-full z-1 bg-transparent" alt="NavBar">
         <div className="px-4 md:px-14 mx-auto flex items-center justify-between  ">
           <div>
             <Link
