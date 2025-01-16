@@ -21,7 +21,7 @@ const projectBannerContent = {
     },
     btn: {
       href: '',
-      label: "Plus d'informations",
+      label: "Plus d&aposinformations",
     },
   },
 }
