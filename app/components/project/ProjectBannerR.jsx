@@ -152,7 +152,7 @@ const ProjectBanner = ({
               <BtnStack contentType="project" className="contents lg:hidden" />
 
               {/* Content Right - BtnAction */}
-              {projectBannerContent.heading.btn.label && (
+              {(btn || btn1) && (
                 <motion.div
                   initial={{ opacity: 0, y: 20 }}
                   whileInView={{
@@ -164,23 +164,30 @@ const ProjectBanner = ({
                   className="btn-container mt-10"
                 >
                   {/* Content left - btn - demo */}
-                  <Link
-                    href={projectBannerContent.heading.btn1.href}
-                    className="transistion-all duration-300 ease-in-out text-[11.5px]
-                    md:tracking-[2px] font-bold uppercase bg-gradient-to-r from-orange-300 to-orange-500 py-4 px-5
-                    rounded  text-gray-600 hover:bg-white hover:text-[#2F2E2E] inline-block hover:shadow-2xl mb-5 mr-5"
-                  >
-                    {projectBannerContent.heading.btn1.label}
-                  </Link>
+                  {btn1?.href && (
+                    <Link
+                      href={btn1.href}
+                      target="_blank"
+                      className="transistion-all duration-300 ease-in-out text-[11.5px]
+                      md:tracking-[2px] font-bold uppercase bg-gradient-to-r from-orange-300 to-orange-500 py-4 px-5
+                      rounded  text-gray-600 hover:bg-white hover:text-[#2F2E2E] inline-block hover:shadow-2xl mb-5 mr-5"
+                    >
+                      Demo
+                    </Link>
+                  )}
+                  
                   {/* Content left - btn - info */}
-                  <Link
-                    href={projectBannerContent.heading.btn.href}
-                    className="transistion-all duration-300 ease-in-out text-[11.5px]
-                    md:tracking-[2px] font-bold uppercase bg-gradient-to-r from-orange-100 to-orange-300 py-4 px-5
-                    rounded  text-gray-600 hover:bg-white hover:text-[#2F2E2E] inline-block hover:shadow-2xl mb-5 mr-5"
-                  >
-                    {projectBannerContent.heading.btn.label}
-                  </Link>
+                  {btn?.href && (
+                    <Link
+                      href={btn.href}
+                      target="_blank"
+                      className="transistion-all duration-300 ease-in-out text-[11.5px]
+                      md:tracking-[2px] font-bold uppercase bg-gradient-to-r from-orange-100 to-orange-300 py-4 px-5
+                      rounded  text-gray-600 hover:bg-white hover:text-[#2F2E2E] inline-block hover:shadow-2xl mb-5 mr-5"
+                    >
+                      Plus d'informations
+                    </Link>
+                  )}
                 </motion.div>
               )}
             </div>
