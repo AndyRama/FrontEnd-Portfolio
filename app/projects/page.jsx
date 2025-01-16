@@ -6,7 +6,7 @@ import ProjectBannerR from '../components/project/ProjectBannerR'
 
 import TeamImage from './../../public/images/Team.jpg'
 import UnlcoachingImage from './../../public/images/unlcoaching.png'
-import schoolUnlcoachingImage from './../../public/images/unlcoaching2.png'
+import UnlcoachingImage2 from './../public/images/unlcoaching2.png'
 import FilleDeLaGraceImage from './../../public/images/Fille-de-la-grace2.png'
 import HomePortfolio from './../../public/images/lemurianV1.png'
 
@@ -17,13 +17,15 @@ export const metadata = {
 const projectsData = [
   {
     Component: ProjectBannerR,
-    subTitle: 'Application web',
-    title: 'express-depanage-plomberie.fr',
-    time: '1 mois 1/2',
-    mission: 'Client final',
+    subTitle: 'Site vitrine',
+    title: 'I-doctor.fr',
+    time: 'en cours',
+    mission: 'Client Final',
     developpement: 'Full-Stack',
-    image: schoolUnlcoachingImage,
-    btn1: { href: 'https://www.unlcoaching.com' },
+    image: Idoctor,
+    contentType: 'project',
+    btn: { href: 'https://project-pj-03.vercel.app' },
+    btn1: { href: 'express-depannage-plomberie.vercel.app/projects/Unlcoaching-jeremy-prat' },
     description: `J'ai eu l'opportunité de travailler sur divers projets stimulants qui m'ont permis d'affiner mes compétences et d'explorer 
                   les dernières technologies du web. Mon portfolio reflète mon engagement envers la création d'interfaces utilisateur intuitives et 
                   esthétiquement plaisantes.`,
@@ -31,13 +33,13 @@ const projectsData = [
   {
     Component: ProjectBanner,
     subTitle: 'Site vitrine',
-    title: 'lemurian.fr',
-    time: '1 mois',
-    mission: 'Side Project',
+    title: 'express-plomberie.com',
+    time: '10 jrs',
+    mission: 'Client Final',
     developpement: 'Full-Stack',
-    image: HomePortfolio,
-    contentType: 'project',
-    btn1: { href: 'https://portfolio-eta-three-93.vercel.app/' },
+    image: Express,
+    btn: { href: 'https://express-depannage-plomberie.vercel.app' },
+    btn1: { href: 'express-depannage-plomberie.vercel.app/projects/Express-depannage-plomberie' },
     description: `J'ai eu l'opportunité de travailler sur divers projets stimulants qui m'ont permis d'affiner mes compétences et d'explorer 
                   les dernières technologies du web. Mon portfolio reflète mon engagement envers la création d'interfaces utilisateur intuitives et 
                   esthétiquement plaisantes.`,
@@ -46,12 +48,13 @@ const projectsData = [
     Component: ProjectBannerR,
     subTitle: 'Site vitrine',
     title: 'Unlcoaching.com',
-    time: 'en cours',
-    mission: 'Client final',
+    time: '1 mois',
+    mission: 'Client Final',
     developpement: 'Full-Stack',
     image: UnlcoachingImage,
     contentType: 'project',
-    btn1: { href: 'https://www.unlcoaching.com' },
+    btn: { href: 'https://project-pj-03.vercel.app' },
+    btn1: { href: 'express-depannage-plomberie.vercel.app/projects/Unlcoaching-jeremy-prat' },
     description: `J'ai eu l'opportunité de travailler sur divers projets stimulants qui m'ont permis d'affiner mes compétences et d'explorer 
                   les dernières technologies du web. Mon portfolio reflète mon engagement envers la création d'interfaces utilisateur intuitives et 
                   esthétiquement plaisantes.`,
@@ -59,13 +62,14 @@ const projectsData = [
   {
     Component: ProjectBanner,
     subTitle: 'Site vitrine',
-    title: 'Fille-de-la-grace.com',
-    time: 'en cours',
-    mission: 'Client final',
+    title: 'Lemurian.fr',
+    time: '1 mois',
+    mission: 'Side Project',
     developpement: 'Full-Stack',
-    image: FilleDeLaGraceImage,
+    image: HomePortfolio,
     contentType: 'project',
-    btn1: { href: 'https://www.andyramaroson.com' },
+    btn1: { href: 'https://portfolio-eta-three-93.vercel.app/' },
+    btn: { href: 'express-depannage-plomberie.vercel.app/projects/Potfolio-andy-ramaroson' },
     description: `J'ai eu l'opportunité de travailler sur divers projets stimulants qui m'ont permis d'affiner mes compétences et d'explorer 
                   les dernières technologies du web. Mon portfolio reflète mon engagement envers la création d'interfaces utilisateur intuitives et 
                   esthétiquement plaisantes.`,
@@ -73,12 +77,73 @@ const projectsData = [
   {
     Component: ProjectBannerR,
     subTitle: 'Site vitrine',
-    title: 'i-doctor.fr',
-    time: 'en cours',
+    title: 'Unlcoaching V1',
+    time: '1 mois',
     mission: 'Client final',
     developpement: 'Full-Stack',
-    image: UnlcoachingImage,
-    btn1: { href: 'https://www.unlcoaching.com' },
+    image: UnlcoachingImage2,
+    contentType: 'project',
+    btn: { href: 'https://www.unlcoaching.com' },
+    btn1: { href: 'express-depannage-plomberie.vercel.app/projects/Unlcoaching-jeremy-prat' },
+    description: `J'ai eu l'opportunité de travailler sur divers projets stimulants qui m'ont permis d'affiner mes compétences et d'explorer 
+                  les dernières technologies du web. Mon portfolio reflète mon engagement envers la création d'interfaces utilisateur intuitives et 
+                  esthétiquement plaisantes.`,
+  },
+  {
+    Component: ProjectBanner,
+    subTitle: 'Site vitrine',
+    title: 'WealthHealth',
+    time: '20 jrs',
+    mission: 'Side Project',
+    developpement: 'Full-Stack',
+    image: HomeWealth,
+    contentType: 'project',
+    btn: { href: 'andy-ramaroson-14-25112021.vercel.app' },
+    btn1: { href: 'express-depannage-plomberie.vercel.app/projects/Fille-de-la-grace' },
+    description: `J'ai eu l'opportunité de travailler sur divers projets stimulants qui m'ont permis d'affiner mes compétences et d'explorer 
+                                les dernières technologies du web. Mon portfolio reflète mon engagement envers la création d'interfaces utilisateur intuitives et 
+                                esthétiquement plaisantes.`,
+  },
+  {
+    Component: ProjectBannerR,
+    subTitle: 'Site vitrine',
+    title: 'Fille-de-la-grace.com',
+    time: '1 mois',
+    mission: 'Side Project',
+    developpement: 'Full-Stack',
+    image: FilleDeLaGraceImage,
+    btn: { href: ' ecommerce-dashboard-woad.vercel.app ' },
+    btn1: { href: '#' },
+    description: `J'ai eu l'opportunité de travailler sur divers projets stimulants qui m'ont permis d'affiner mes compétences et d'explorer 
+                  les dernières technologies du web. Mon portfolio reflète mon engagement envers la création d'interfaces utilisateur intuitives et 
+                  esthétiquement plaisantes.`,
+  },
+  {
+    Component: ProjectBanner,
+    subTitle: 'E-commerce',
+    title: 'Masuda-store',
+    time: 'en cours',
+    mission: 'Side Project',
+    developpement: ' Full-Stack',
+    image: HomeStoreMastuda,
+    contentType: 'project',
+    btn: { href: 'ecommerce-store-andyrama.vercel.app' },
+    btn1: { href: 'express-depannage-plomberie.vercel.app/projects/Unlcoaching-jeremy-prat' },
+    description: `J'ai eu l'opportunité de travailler sur divers projets stimulants qui m'ont permis d'affiner mes compétences et d'explorer 
+                  les dernières technologies du web. Mon portfolio reflète mon engagement envers la création d'interfaces utilisateur intuitives et 
+                  esthétiquement plaisantes.`,
+
+  },
+  {
+    Component: ProjectBannerR,
+    subTitle: 'E-commerce',
+    title: 'Matsuda-Dashboard',
+    time: 'en cours',
+    mission: 'Side Project',
+    developpement: 'Full-Stack',
+    image: HomeDashMastuda,
+    btn: { href: 'ecommerce-store-andyrama.vercel.app' },
+    btn1: { href: 'express-depannage-plomberie.vercel.app/projects/Unlcoaching-jeremy-prat' },
     description: `J'ai eu l'opportunité de travailler sur divers projets stimulants qui m'ont permis d'affiner mes compétences et d'explorer 
                   les dernières technologies du web. Mon portfolio reflète mon engagement envers la création d'interfaces utilisateur intuitives et 
                   esthétiquement plaisantes.`,
