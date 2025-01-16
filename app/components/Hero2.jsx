@@ -31,7 +31,7 @@ export default function Hero1() {
         }}
       />
 
-      <div className="container relative z-20 mx-auto px-4 lg:px-16">
+      <div className="container relative z-20 mx-auto mt-20 lg:mt-0 px-4 lg:px-16">
         <div className="flex flex-col lg:flex-row items-center">
           {/* Text Section */}
           <motion.div
