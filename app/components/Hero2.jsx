@@ -21,7 +21,7 @@ export default function Hero1() {
         <ul className="flex flex-row rotate-90 text-gray-700">
           <li>
             <Link
-              href="https://www.linkedin.com/in/andyramaroson/"
+              href="https://www.linkedin.com/in/andy-ramaroson/"
               target="_blank"
               className="hover:text-orange-500 transition duration-300 mr-20"
             >

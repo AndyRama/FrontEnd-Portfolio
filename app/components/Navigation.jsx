@@ -65,7 +65,7 @@ export default function Navigation() {
               className="flex flex-row text-2xl md:text-3xl text-[#2F2E2E] font-bold "
             >
               {/* Logo - content left*/}
-              <span className="mt-2 mx-3 hidden md:flex rounded-md">
+              <span className="mt-2 mx-3 flex rounded-md">
                 <Image
                   src="https://res.cloudinary.com/dbtnehfrf/image/upload/v1676150032/andyLogo_kboemr.png"
                   weight={20}
