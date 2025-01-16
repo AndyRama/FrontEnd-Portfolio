@@ -67,11 +67,11 @@ export default function Navigation() {
               {/* Logo - content left*/}
               <span className="my-[-10px] mx-3 hidden md:flex border rounded-full">
                 <Image
-                  src={IconLogo}
+                  src="https://res.cloudinary.com/dbtnehfrf/image/upload/v1676150032/andyLogo_kboemr.png"
                   weight={20}
                   height={20}
                   alt="logo andy ramaroson"
-                  className='h-20px w-20px'
+                  className='h-[20] w-[20]'
                 />
               </span>
               {/* Name Link - content left*/}
