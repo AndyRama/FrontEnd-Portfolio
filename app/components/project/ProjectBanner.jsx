@@ -83,7 +83,7 @@ const ProjectBanner = ({
           </motion.div>
 
           {/* Content Left */}
-          <div className="xl:w-12/12 relative lg:mt-0 mb-8 lg:mb-0 mr-0 xl:mr-40 ml-10">
+          <div className="xl:w-12/12 relative lg:mt-0 mb-8 lg:mb-0 mr-0 xl:mr-40">
             <div className="lg:max-w-xl mx-auto mb-10">
               {/* Content Left - subtitle */}
               {subTitle && (
