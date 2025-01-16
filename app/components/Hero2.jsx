@@ -16,6 +16,38 @@ export default function Hero1() {
 
   return (
     <section ref={ref} className="relative min-h-screen flex items-center bg-white overflow-hidden">
+      {/* Navigation Links */}
+      <nav className="absolute top-4 left-4 z-30">
+        <ul className="flex flex-col space-y-4 text-gray-700">
+          <li>
+            <Link
+              href="https://www.linkedin.com/in/andyramaroson/"
+              target="_blank"
+              className="hover:text-orange-500 transition duration-300"
+            >
+              LinkedIn
+            </Link>
+          </li>
+          <li>
+            <Link
+              href="https://github.com/andy-ramaroson"
+              target="_blank"
+              className="hover:text-orange-500 transition duration-300"
+            >
+              GitHub
+            </Link>
+          </li>
+          <li>
+            <Link
+              href="/cv"
+              className="hover:text-orange-500 transition duration-300"
+            >
+              CV
+            </Link>
+          </li>
+        </ul>
+      </nav>
+
       {/* Animated orange overlay */}
       <motion.div
         className="absolute inset-0 bg-[#FFB088] z-10"
@@ -90,26 +122,7 @@ export default function Hero1() {
               >
                 Prendre rendez-vous
               </Link>
-              {/* Scroll Down Indicator */}
-              <motion.div
-                className="absolute bottom-10 left-1/2 transform -translate-x-1/2 text-gray-600 flex items-center gap-2"
-                initial={{ opacity: 0, y: -20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ delay: 1.2, duration: 0.5, repeat: Infinity, repeatType: 'reverse' }}
-              >
-                Scroll Down
-                <motion.span
-                  animate={{ y: [0, 5, 0] }}
-                  transition={{
-                    duration: 2,
-                    repeat: Infinity,
-                  }}
-                >
-                  ↓
-                </motion.span>
-              </motion.div>
             </motion.div>
-
           </motion.div>
 
           {/* Image Section */}
