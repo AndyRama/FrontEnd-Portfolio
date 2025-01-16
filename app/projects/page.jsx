@@ -6,7 +6,7 @@ import ProjectBannerR from '../components/project/ProjectBannerR'
 
 import TeamImage from './../../public/images/Team.jpg'
 import UnlcoachingImage from './../../public/images/unlcoaching.png'
-import UnlcoachingImage2 from './../public/images/unlcoaching2.png'
+import UnlcoachingImage2 from './../../public/images/unlcoaching2.png'
 import FilleDeLaGraceImage from './../../public/images/Fille-de-la-grace2.png'
 import HomePortfolio from './../../public/images/lemurianV1.png'
 
