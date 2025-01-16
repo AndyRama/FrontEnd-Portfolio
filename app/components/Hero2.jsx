@@ -21,13 +21,13 @@ export default function Hero1() {
         className="absolute inset-0 bg-[#FFB088] z-10"
         initial={{ x: '100%' }}
         animate={{
-          x: ['100%', '-100%', '100%', '60%'],
+          x: ['100%', '-100%', '100%', '65%'],
         }}
         transition={{
           duration: 4,
           ease: 'easeInOut',
           times: [0, 0.4, 0, 1],
-          repeat: Infinity,
+          repeat: 0,
         }}
       />
 
