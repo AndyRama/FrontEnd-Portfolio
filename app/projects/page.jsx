@@ -5,14 +5,14 @@ import ProjectBanner from '../components/project/ProjectBanner'
 import ProjectBannerR from '../components/project/ProjectBannerR'
 
 import TeamImage from './../../public/images/Team.jpg'
-import Express from './../../public/images/Express4.png'
+import Express from './../../public/images/Express3.png'
 import UnlcoachingImage from './../../public/images/unlcoaching.png'
 import UnlcoachingImage2 from './../../public/images/unlcoaching2.png'
 import FilleDeLaGraceImage from './../../public/images/Fille-de-la-grace2.png'
 import HomePortfolio from './../../public/images/home-portfolio.png'
 import HomeStoreMastuda from './../../public/images/home-store.png'
 import HomeDashMastuda from './../../public/images/home-dash.png'
-import HomeWealth from './../../public/images/WealthHealth_1.png'
+import HomeWealth from './../../public/images/WealthHealth_2.png'
 import Idoctor from './../../public/images/i-doctor.png'
 
 export const metadata = {
