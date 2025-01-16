@@ -4,11 +4,21 @@ import Subscribe from '../components/Subscribe'
 import ProjectBanner from '../components/project/ProjectBanner'
 import ProjectBannerR from '../components/project/ProjectBannerR'
 
+// import UnlcoachingImage from './../../public/images/unlcoaching.png'
+// import UnlcoachingImage2 from './../../public/images/unlcoaching2.png'
+// import FilleDeLaGraceImage from './../../public/images/Fille-de-la-grace2.png'
+// import HomePortfolio from './../../public/images/lemurianV1.png'
+
 import TeamImage from './../../public/images/Team.jpg'
+import Express from './../../public/images/Express4.png'
 import UnlcoachingImage from './../../public/images/unlcoaching.png'
 import UnlcoachingImage2 from './../../public/images/unlcoaching2.png'
 import FilleDeLaGraceImage from './../../public/images/Fille-de-la-grace2.png'
-import HomePortfolio from './../../public/images/lemurianV1.png'
+import HomePortfolio from './../../public/images/home-portfolio.png'
+import HomeStoreMastuda from './../../public/images/home-store.png'
+import HomeDashMastuda from './../../public/images/home-dash.png'
+import HomeWealth from './../../public/images/WealthHealth_1.png'
+import Idoctor from './../../public/images/i-doctor.png'
 
 export const metadata = {
   title: 'Projects - Andy Ramaroson',
@@ -162,7 +172,6 @@ const projectsData = [
                   les dernières technologies du web. Mon portfolio reflète mon engagement envers la création d'interfaces utilisateur intuitives et 
                   esthétiquement plaisantes.`,
   },
-
 ]
 
 const page = () => {
