@@ -167,7 +167,7 @@ const projectsData = [
     developpement: 'Full-Stack',
     image: FilleDeLaGraceImage,
     contentType: 'project',
-    btn1: { href: "https://www.andyramaroson.com" },
+    btn1: { url: "https://www.andyramaroson.com" },
     description: `J'ai eu l'opportunité de travailler sur divers projets stimulants qui m'ont permis d'affiner mes compétences et d'explorer 
                   les dernières technologies du web. Mon portfolio reflète mon engagement envers la création d'interfaces utilisateur intuitives et 
                   esthétiquement plaisantes.`,
