@@ -30,7 +30,7 @@ export default function Hero1() {
           </li>
           <li>
             <Link
-              href="https://github.com/andy-ramaroson"
+              href="https://github.com/andyrama"
               target="_blank"
               className="hover:text-orange-500 transition duration-300 mr-20"
             >
