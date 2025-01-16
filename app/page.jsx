@@ -25,8 +25,8 @@ const projectsData = [
     developpement: 'Full-Stack',
     image: Idoctor,
     contentType: 'project',
-    btn: { href: 'https://project-pj-03.vercel.app' },
-    btn1: { href: 'projects/Unlcoaching-jeremy-prat' },
+    btn: { href: 'projects/Unlcoaching-jeremy-prat' },
+    btn1: { href: 'https://project-pj-03.vercel.app' },
     description: `J'ai eu l'opportunité de travailler sur divers projets stimulants qui m'ont permis d'affiner mes compétences et d'explorer 
                   les dernières technologies du web. Mon portfolio reflète mon engagement envers la création d'interfaces utilisateur intuitives et 
                   esthétiquement plaisantes.`,
@@ -39,8 +39,8 @@ const projectsData = [
     mission: 'Client Final',
     developpement: 'Full-Stack',
     image: Express,
-    btn: { href: 'https://express-depannage-plomberie.vercel.app' },
-    btn1: { href: 'projects/Express-depannage-plomberie' },
+    btn: { href: 'projects/Express-depannage-plomberie' },
+    btn1: { href: 'https://express-depannage-plomberie.vercel.app' },
     description: `J'ai eu l'opportunité de travailler sur divers projets stimulants qui m'ont permis d'affiner mes compétences et d'explorer 
                   les dernières technologies du web. Mon portfolio reflète mon engagement envers la création d'interfaces utilisateur intuitives et 
                   esthétiquement plaisantes.`,
@@ -54,8 +54,8 @@ const projectsData = [
     developpement: 'Full-Stack',
     image: UnlcoachingImage,
     contentType: 'project',
-    btn: { href: 'https://project-pj-03.vercel.app' },
-    btn1: { href: 'projects/Unlcoaching-jeremy-prat' },
+    btn: { href: 'projects/Unlcoaching-jeremy-prat' },
+    btn1: { href: 'https://project-pj-03.vercel.app' },
     description: `J'ai eu l'opportunité de travailler sur divers projets stimulants qui m'ont permis d'affiner mes compétences et d'explorer 
                   les dernières technologies du web. Mon portfolio reflète mon engagement envers la création d'interfaces utilisateur intuitives et 
                   esthétiquement plaisantes.`,
@@ -69,8 +69,8 @@ const projectsData = [
     developpement: 'Full-Stack',
     image: HomePortfolio,
     contentType: 'project',
+    btn: { href: '#' },
     btn1: { href: 'https://portfolio-eta-three-93.vercel.app/' },
-    btn: { href: 'projects/Potfolio-andy-ramaroson' },
     description: `J'ai eu l'opportunité de travailler sur divers projets stimulants qui m'ont permis d'affiner mes compétences et d'explorer 
                   les dernières technologies du web. Mon portfolio reflète mon engagement envers la création d'interfaces utilisateur intuitives et 
                   esthétiquement plaisantes.`,
@@ -84,8 +84,8 @@ const projectsData = [
     developpement: 'Full-Stack',
     image: UnlcoachingImage2,
     contentType: 'project',
-    btn: { href: 'https://www.unlcoaching.com' },
-    btn1: { href: 'projects/Unlcoaching-jeremy-prat' },
+    btn: { href: 'projects/Unlcoaching-jeremy-prat' },
+    btn1: { href: 'https://www.unlcoaching.com' },
     description: `J'ai eu l'opportunité de travailler sur divers projets stimulants qui m'ont permis d'affiner mes compétences et d'explorer 
                   les dernières technologies du web. Mon portfolio reflète mon engagement envers la création d'interfaces utilisateur intuitives et 
                   esthétiquement plaisantes.`,
@@ -99,8 +99,8 @@ const projectsData = [
     developpement: 'Full-Stack',
     image: HomeWealth,
     contentType: 'project',
-    btn: { href: 'andy-ramaroson-14-25112021.vercel.app' },
-    btn1: { href: 'projects/Fille-de-la-grace' },
+    btn: { href: '#' },
+    btn1: { href: 'https://andy-ramaroson-14-25112021.vercel.app' },
     description: `J'ai eu l'opportunité de travailler sur divers projets stimulants qui m'ont permis d'affiner mes compétences et d'explorer 
                                 les dernières technologies du web. Mon portfolio reflète mon engagement envers la création d'interfaces utilisateur intuitives et 
                                 esthétiquement plaisantes.`,
@@ -113,8 +113,8 @@ const projectsData = [
     mission: 'Side Project',
     developpement: 'Full-Stack',
     image: FilleDeLaGraceImage,
-    btn: { href: ' https://ecommerce-store-andyrama.vercel.app ' },
-    btn1: { href: '#' },
+    btn: { href: '#' },
+    btn1: { href: ' https://ecommerce-store-andyrama.vercel.app ' },
     description: `J'ai eu l'opportunité de travailler sur divers projets stimulants qui m'ont permis d'affiner mes compétences et d'explorer 
                   les dernières technologies du web. Mon portfolio reflète mon engagement envers la création d'interfaces utilisateur intuitives et 
                   esthétiquement plaisantes.`,
@@ -128,8 +128,8 @@ const projectsData = [
     developpement: ' Full-Stack',
     image: HomeStoreMastuda,
     contentType: 'project',
-    btn: { href: 'https://ecommerce-store-andyrama.vercel.app' },
-    btn1: { href: 'projects/Unlcoaching-jeremy-prat' },
+    btn: { href: 'projects/Unlcoaching-jeremy-prat' },
+    btn1: { href: 'https://ecommerce-store-andyrama.vercel.app' },
     description: `J'ai eu l'opportunité de travailler sur divers projets stimulants qui m'ont permis d'affiner mes compétences et d'explorer 
                   les dernières technologies du web. Mon portfolio reflète mon engagement envers la création d'interfaces utilisateur intuitives et 
                   esthétiquement plaisantes.`,
@@ -143,8 +143,8 @@ const projectsData = [
     mission: 'Side Project',
     developpement: 'Full-Stack',
     image: HomeDashMastuda,
-    btn: { href: 'https://ecommerce-store-andyrama.vercel.app' },
-    btn1: { href: 'projects/Unlcoaching-jeremy-prat' },
+    btn: { href: 'projects/Unlcoaching-jeremy-prat' },
+    btn1: { href: 'https://ecommerce-store-andyrama.vercel.app' },
     description: `J'ai eu l'opportunité de travailler sur divers projets stimulants qui m'ont permis d'affiner mes compétences et d'explorer 
                   les dernières technologies du web. Mon portfolio reflète mon engagement envers la création d'interfaces utilisateur intuitives et 
                   esthétiquement plaisantes.`,
