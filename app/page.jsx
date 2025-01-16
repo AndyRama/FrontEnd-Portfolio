@@ -69,7 +69,7 @@ const projectsData = [
     mission: 'Side Project',
     developpement: 'Full-Stack',
     image: HomePortfolio,
-    contentType: '',
+    contentType: 'project',
     btn: { href: '#' },
     btn1: { href: 'https://portfolio-eta-three-93.vercel.app/' },
     description: `J'ai eu l'opportunité de travailler sur divers projets stimulants qui m'ont permis d'affiner mes compétences et d'explorer 

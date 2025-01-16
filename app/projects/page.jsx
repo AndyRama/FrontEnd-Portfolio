@@ -28,7 +28,7 @@ const projectsData = [
     mission: 'Client Final',
     developpement: 'Full-Stack',
     image: Idoctor,
-    contentType: 'project',
+    contentType: '',
     btn: { href: '#' },
     btn1: { href: '#' },
     description: `J'ai eu l'opportunité de travailler sur divers projets stimulants qui m'ont permis d'affiner mes compétences et d'explorer 
@@ -43,6 +43,7 @@ const projectsData = [
     mission: 'Client Final',
     developpement: 'Full-Stack',
     image: Express,
+    contentType: 'project',
     btn: { href: 'projects/Express-depannage-plomberie' },
     btn1: { href: 'https://express-depannage-plomberie.vercel.app' },
     description: `J'ai eu l'opportunité de travailler sur divers projets stimulants qui m'ont permis d'affiner mes compétences et d'explorer 
@@ -57,7 +58,7 @@ const projectsData = [
     mission: 'Client Final',
     developpement: 'Full-Stack',
     image: UnlcoachingImage,
-    contentType: 'project',
+    contentType: '',
     btn: { href: 'projects/Unlcoaching-jeremy-prat' },
     btn1: { href: 'https://project-pj-03.vercel.app' },
     description: `J'ai eu l'opportunité de travailler sur divers projets stimulants qui m'ont permis d'affiner mes compétences et d'explorer 
@@ -117,6 +118,7 @@ const projectsData = [
     mission: 'Side Project',
     developpement: 'Full-Stack',
     image: FilleDeLaGraceImage,
+    contentType: 'project',
     btn: { href: '#' },
     btn1: { href: 'https://ecommerce-dashboard-woad.vercel.app ' },
     description: `J'ai eu l'opportunité de travailler sur divers projets stimulants qui m'ont permis d'affiner mes compétences et d'explorer 
@@ -131,7 +133,7 @@ const projectsData = [
     mission: 'Side Project',
     developpement: ' Full-Stack',
     image: HomeStoreMastuda,
-    contentType: 'project',
+    contentType: '',
     btn: { href: 'projects/Unlcoaching-jeremy-prat' },
     btn1: { href: 'https://ecommerce-store-andyrama.vercel.app' },
     description: `J'ai eu l'opportunité de travailler sur divers projets stimulants qui m'ont permis d'affiner mes compétences et d'explorer 
@@ -147,6 +149,7 @@ const projectsData = [
     mission: 'Side Project',
     developpement: 'Full-Stack',
     image: HomeDashMastuda,
+    contentType: '',
     btn: { href: 'projects/Unlcoaching-jeremy-prat' },
     btn1: { href: 'https://ecommerce-store-andyrama.vercel.app' },
     description: `J'ai eu l'opportunité de travailler sur divers projets stimulants qui m'ont permis d'affiner mes compétences et d'explorer 
