@@ -21,7 +21,7 @@ export default function Hero1() {
         className="absolute inset-0 bg-[#FFB088] z-10"
         initial={{ x: '100%' }}
         animate={{
-          x: ['100%', '-100%', '100%', '68%'],
+          x: ['100%', '-100%', '100%', '60%'],
         }}
         transition={{
           duration: 4,
@@ -90,26 +90,26 @@ export default function Hero1() {
               >
                 Prendre rendez-vous
               </Link>
+              {/* Scroll Down Indicator */}
+              <motion.div
+                className="absolute bottom-10 left-1/2 transform -translate-x-1/2 text-gray-600 flex items-center gap-2"
+                initial={{ opacity: 0, y: -20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: 1.2, duration: 0.5, repeat: Infinity, repeatType: 'reverse' }}
+              >
+                Scroll Down
+                <motion.span
+                  animate={{ y: [0, 5, 0] }}
+                  transition={{
+                    duration: 2,
+                    repeat: Infinity,
+                  }}
+                >
+                  ↓
+                </motion.span>
+              </motion.div>
             </motion.div>
 
-            {/* Scroll Down Indicator */}
-            <motion.div
-              className="absolute bottom-10 left-1/2 transform -translate-x-1/2 text-gray-600 flex items-center gap-2"
-              initial={{ opacity: 0, y: -20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 1.2, duration: 0.5, repeat: Infinity, repeatType: 'reverse' }}
-            >
-              Scroll Down
-              <motion.span
-                animate={{ y: [0, 5, 0] }}
-                transition={{
-                  duration: 2,
-                  repeat: Infinity,
-                }}
-              >
-                ↓
-              </motion.span>
-            </motion.div>
           </motion.div>
 
           {/* Image Section */}
