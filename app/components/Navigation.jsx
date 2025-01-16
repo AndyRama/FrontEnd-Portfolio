@@ -1,7 +1,7 @@
 'use client'
 
 import Image from 'next/image'
-import IconLogo from './../../public/images/logo4.jpg'
+import IconLogo from './../../public/images/arLogo.png'
 import Link from 'next/link'
 import React, { Fragment, useState, useEffect } from 'react'
 import { usePathname } from 'next/navigation'
@@ -65,15 +65,15 @@ export default function Navigation() {
               className="flex flex-row text-2xl md:text-3xl text-[#2F2E2E] font-bold "
             >
               {/* Logo - content left*/}
-              {/* <span className="my-[-10px] mx-3 hidden md:flex border rounded-full">
+              <span className="my-[-10px] mx-3 hidden md:flex border rounded-full">
                 <Image
                   src={IconLogo}
                   weight={60}
                   height={60}
                   alt="logo"
-                  className="rounded-full "
+                  className="rounded-full"
                 />
-              </span> */}
+              </span>
               {/* Name Link - content left*/}
               Portfolio
               <span className=" text-[#2F2E2E] ">.</span>
