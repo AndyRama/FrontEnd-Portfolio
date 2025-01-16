@@ -37,6 +37,15 @@ export default function Hero1() {
               GitHub
             </Link>
           </li>
+          <li>
+            <Link
+              href="images/CV_Andy_Ramaroson.pdf"
+              target="_blank"
+              className="hover:text-orange-500 transition duration-300"
+            >
+              CV
+            </Link>
+          </li>
         </ul>
       </nav>
 
@@ -103,14 +112,8 @@ export default function Hero1() {
               transition={{ delay: 1, duration: 0.5 }}
             >
               <Link
-                href="/projects"
-                className="bg-orange-500 text-white px-6 py-3 rounded-md hover:bg-orange-600 transition duration-300"
-              >
-                CV
-              </Link>
-              <Link
                 href="https://calendly.com/andyramaroson/30min"
-                className="bg-white text-orange-500 px-6 py-3 rounded-md border border-orange-500 hover:bg-orange-50 transition duration-300"
+                className="bg-orange-500 text-white px-6 py-3 rounded-md hover:bg-orange-600 transition duration-300"
               >
                 Prendre rendez-vous
               </Link>
