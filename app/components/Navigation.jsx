@@ -68,8 +68,8 @@ export default function Navigation() {
               <span className="my-[-10px] mx-3 hidden md:flex border rounded-full">
                 <Image
                   src={IconLogo}
-                  weight="20px"
-                  height="20px"
+                  weight={"20 px"}
+                  height={"20 px"}
                   alt="logo andy ramaroson"
                 />
               </span>
