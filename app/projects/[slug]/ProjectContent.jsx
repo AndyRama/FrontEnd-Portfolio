@@ -73,18 +73,20 @@ const ProjectContent = ({ project }) => {
           </div>
           {/* Links */}
           <div className="flex gap-4 mt-6">
+          <h3 className="text-gray-400">Ressources</h3>
             {project.github && (
               <a href={project.github} target="_blank" className="text-blue-600">
                 GitHub
               </a>
             )}
+            <br/>
             {project.herb && (
               <a href={project.herb} target="_blank" className="text-blue-600">
-                Site Web
+                {project.herb}
               </a>
             )}
           </div>
-          
+
           <MDXContent />
 
         </article>
