@@ -60,7 +60,6 @@ const ProjectContent = ({ project }) => {
 
         {/* Article */}
         <article className="prose mx-auto max-w-2xl">
-          <MDXContent />
           {/* Stacks */}
           <div className="mt-10">
             <h3 className="text-gray-400">Technologies utilisées</h3>
@@ -72,7 +71,6 @@ const ProjectContent = ({ project }) => {
               ))}
             </ul>
           </div>
-
           {/* Links */}
           <div className="flex gap-4 mt-6">
             {project.github && (
@@ -86,6 +84,9 @@ const ProjectContent = ({ project }) => {
               </a>
             )}
           </div>
+          
+          <MDXContent />
+
         </article>
       </div>
 
