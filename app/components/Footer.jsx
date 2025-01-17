@@ -20,26 +20,26 @@ const footerContent = {
           label: 'Home',
         },
         {
-          href: '/blog',
-          label: 'Blog',
-          badge: 'New',
-        },     
-      ],
-    },
-    {
-      heading: 'services',
-      links: [
-        {
           href: '/contact',
           label: 'Contact',
-        },
-        {
-          href: '/projects',
-          label: 'Réalisations',
-          badge: 'New',
-        },
+        },    
       ],
     },
+    // {
+    //   heading: 'services',
+    //   links: [
+    //     {
+    //       href: '/blog',
+    //       label: 'Blog',
+    //       badge: 'New',
+    //     }, 
+    //     {
+    //       href: '/projects',
+    //       label: 'Réalisations',
+    //       badge: 'New',
+    //     },
+    //   ],
+    // },
     {
       heading: 'Performance',
       links: [

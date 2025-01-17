@@ -1,5 +1,5 @@
 import Hero2 from './components/Hero2'
-import RecentBlog from './components/RecentBlog'
+// import RecentBlog from './components/RecentBlog'
 import Subscribe from './components/Subscribe'
 import ProjectBanner from './components/project/ProjectBanner'
 import ProjectBannerR from './components/project/ProjectBannerR'
@@ -167,7 +167,7 @@ export default function Home() {
           />
         )
       })}
-      <RecentBlog className="pt-14 pb-15 " />
+      {/* <RecentBlog className="pt-14 pb-15 " /> */}
       <Subscribe className="py-16 lg:py-32 " />
     </>
   )
