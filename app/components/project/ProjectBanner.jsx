@@ -64,13 +64,14 @@ const ProjectBanner = ({
         <div className="flex flex-col xl:flex-row-reverse lg:w-12/12 mx-auto">
           {/* Content Right */}
           <motion.div
-            initial={{ opacity: 0, x: 20 }}
+            initial={{ opacity: 0, x: 100 }}
             whileInView={{
               opacity: 1,
               x: 0,
               transition: {
-                delay: 0.4,
+                delay: 0.3,
                 duration: 0.5,
+                ease: 'easeInOut',
               },
             }}
             viewport={{ once: true }}

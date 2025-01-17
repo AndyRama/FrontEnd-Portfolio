@@ -64,7 +64,7 @@ const ProjectBanner = ({
         <div className="flex flex-col xl:flex-row lg:w-12/12 mx-auto">
           {/* Content Left - image */}
           <motion.div
-            initial={{ opacity: 0, x: -50 }}
+            initial={{ opacity: 0, x: -100 }}
             whileInView={{
               opacity: 1,
               x: 0,
