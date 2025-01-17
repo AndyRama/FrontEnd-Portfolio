@@ -149,7 +149,7 @@ const ProjectBanner = ({
                 </motion.p>
               )}
 
-              <BtnStack contentType="" className="contents lg:hidden" />
+              <BtnStack contentType={contentType} className="contents lg:hidden" />
 
               {/* Content Right - BtnAction */}
               {(btn || btn1) && (
@@ -194,7 +194,7 @@ const ProjectBanner = ({
           </div>
         </div>
         {/* Content Right - stack - mobile */}
-        <BtnStack contentType="" className="hidden lg:contents" />
+        <BtnStack contentType={contentType} className="hidden lg:contents" />
         <div className="contents md:hidden">
           <hr />
         </div>
