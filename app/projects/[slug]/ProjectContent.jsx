@@ -61,6 +61,7 @@ const ProjectContent = ({ project }) => {
         {/* Article */}
         <article className="prose mx-auto max-w-2xl">
           {/* Stacks */}
+          <MDXContent />
           <div className="mt-10">
             <h3 className="text-gray-400">Technologies utilisées</h3>
             <ul className="flex flex-wrap gap-2 mt-2">
@@ -72,8 +73,8 @@ const ProjectContent = ({ project }) => {
             </ul>
           </div>
           {/* Links */}
-          <div className="flex gap-4 mt-6">
           <h3 className="text-gray-400">Ressources</h3>
+          <div className="flex gap-4 mt-6">
             {project.github && (
               <a href={project.github} target="_blank" className="text-blue-600">
                 GitHub
@@ -86,9 +87,6 @@ const ProjectContent = ({ project }) => {
               </a>
             )}
           </div>
-
-          <MDXContent />
-
         </article>
       </div>
 
