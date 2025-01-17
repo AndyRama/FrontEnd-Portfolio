@@ -7,10 +7,10 @@ import ProjectBannerR from './components/project/ProjectBannerR'
 import Express from './../public/images/Express4.png'
 import UnlcoachingImage from './../public/images/unlcoaching.png'
 import UnlcoachingImage2 from './../public/images/unlcoaching2.png'
-import FilleDeLaGraceImage from './../public/images/Fille-de-la-grace2.png'
+import Portfolio from './../public/images/portfolio.png'
 import HomePortfolio from './../public/images/home-portfolio.png'
-import HomeStoreMastuda from './../public/images/home-store.png'
-import HomeDashMastuda from './../public/images/home-dash.png'
+// import HomeStoreMastuda from './../public/images/home-store.png'
+// import HomeDashMastuda from './../public/images/home-dash.png'
 import HomeWealth from './../public/images/WealthHealth_1.png'
 import Idoctor from './../public/images/i-doctor.png'
 
@@ -109,11 +109,11 @@ const projectsData = [
   {
     Component: ProjectBannerR,
     subTitle: 'Site vitrine',
-    title: 'Fille-de-la-grace.com',
+    title: 'Andyramaroson.com',
     time: '1 mois',
     mission: 'Side Project',
     developpement: 'Full-Stack',
-    image: FilleDeLaGraceImage,
+    image: Portfolio,
     contentType: 'project',
     btn: { href: '#' },
     btn1: { href: ' https://ecommerce-store-andyrama.vercel.app ' },
@@ -121,37 +121,37 @@ const projectsData = [
                   les dernières technologies du web. Mon portfolio reflète mon engagement envers la création d'interfaces utilisateur intuitives et 
                   esthétiquement plaisantes.`,
   },
-  {
-    Component: ProjectBanner,
-    subTitle: 'E-commerce',
-    title: 'Masuda-store',
-    time: 'en cours',
-    mission: 'Side Project',
-    developpement: ' Full-Stack',
-    image: HomeStoreMastuda,
-    contentType: '',
-    btn: { href: 'projects/Unlcoaching-jeremy-prat' },
-    btn1: { href: 'https://ecommerce-store-andyrama.vercel.app' },
-    description: `J'ai eu l'opportunité de travailler sur divers projets stimulants qui m'ont permis d'affiner mes compétences et d'explorer 
-                  les dernières technologies du web. Mon portfolio reflète mon engagement envers la création d'interfaces utilisateur intuitives et 
-                  esthétiquement plaisantes.`,
+  // {
+  //   Component: ProjectBanner,
+  //   subTitle: 'E-commerce',
+  //   title: 'Masuda-store',
+  //   time: 'en cours',
+  //   mission: 'Side Project',
+  //   developpement: ' Full-Stack',
+  //   image: HomeStoreMastuda,
+  //   contentType: '',
+  //   btn: { href: 'projects/Unlcoaching-jeremy-prat' },
+  //   btn1: { href: 'https://ecommerce-store-andyrama.vercel.app' },
+  //   description: `J'ai eu l'opportunité de travailler sur divers projets stimulants qui m'ont permis d'affiner mes compétences et d'explorer 
+  //                 les dernières technologies du web. Mon portfolio reflète mon engagement envers la création d'interfaces utilisateur intuitives et 
+  //                 esthétiquement plaisantes.`,
 
-  },
-  {
-    Component: ProjectBannerR,
-    subTitle: 'E-commerce',
-    title: 'Matsuda-Dashboard',
-    time: 'en cours',
-    mission: 'Side Project',
-    developpement: 'Full-Stack',
-    image: HomeDashMastuda,
-    contentType: '',
-    btn: { href: 'projects/Unlcoaching-jeremy-prat' },
-    btn1: { href: 'https://ecommerce-store-andyrama.vercel.app' },
-    description: `J'ai eu l'opportunité de travailler sur divers projets stimulants qui m'ont permis d'affiner mes compétences et d'explorer 
-                  les dernières technologies du web. Mon portfolio reflète mon engagement envers la création d'interfaces utilisateur intuitives et 
-                  esthétiquement plaisantes.`,
-  },
+  // },
+  // {
+  //   Component: ProjectBannerR,
+  //   subTitle: 'E-commerce',
+  //   title: 'Matsuda-Dashboard',
+  //   time: 'en cours',
+  //   mission: 'Side Project',
+  //   developpement: 'Full-Stack',
+  //   image: HomeDashMastuda,
+  //   contentType: '',
+  //   btn: { href: 'projects/Unlcoaching-jeremy-prat' },
+  //   btn1: { href: 'https://ecommerce-store-andyrama.vercel.app' },
+  //   description: `J'ai eu l'opportunité de travailler sur divers projets stimulants qui m'ont permis d'affiner mes compétences et d'explorer 
+  //                 les dernières technologies du web. Mon portfolio reflète mon engagement envers la création d'interfaces utilisateur intuitives et 
+  //                 esthétiquement plaisantes.`,
+  // },
 ]
 export default function Home() {
   return (
