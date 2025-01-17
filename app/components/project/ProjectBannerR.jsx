@@ -56,7 +56,7 @@ const ProjectBanner = ({
     offset: ['start end', 'end start'],
   })
 
-  const imgScroll1 = useTransform(scrollYProgress, [0, 1], ['0%', '-20%'])
+  const imgScroll1 = useTransform(scrollYProgress, [0, 1], ['-40%', '0%'])
 
   return (
     <section className={`${className}`}>

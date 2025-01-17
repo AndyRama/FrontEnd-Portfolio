@@ -68,7 +68,7 @@ export default function Navigation() {
               <span className="mt-2 mx-3 flex rounded-md">
                 <Image
                   src="https://res.cloudinary.com/dbtnehfrf/image/upload/v1676150032/andyLogo_kboemr.png"
-                  weight={20}
+                  width={20}
                   height={20}
                   alt="logo andy ramaroson"
                   className='rounded-md w-[20px] h-[20px]'
@@ -211,9 +211,9 @@ export default function Navigation() {
                             onClick={() => setOpen(false)}
                             className="block text-center text-[11.5px] tracking-2[2px] font-bold uppercase bg-gradient-to-r 
                                      from-orange-300 to-orange-500 py-3 px-5 text-[#2F2E2E] hover:text-white hover:shadow-2xl 
-                                      rounded-md"
+                                     rounded-md"
                           >
-                            Calendly
+                            Calendly 
                           </Link>
                         </div>
                       </div>
