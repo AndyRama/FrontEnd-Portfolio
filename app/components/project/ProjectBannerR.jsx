@@ -56,7 +56,7 @@ const ProjectBanner = ({
     offset: ['start end', 'end start'],
   })
 
-  const imgScroll1 = useTransform(scrollYProgress, [0, 1], ['-40%', '0%'])
+  const imgScroll1 = useTransform(scrollYProgress, [0, 1], ['0%', '-20%'])
 
   return (
     <section className={`${className}`}>
@@ -64,10 +64,10 @@ const ProjectBanner = ({
         <div className="flex flex-col xl:flex-row lg:w-12/12 mx-auto">
           {/* Content Left - image */}
           <motion.div
-            initial={{ opacity: 0, x: 20 }}
+            initial={{ opacity: 0, y: 100 }}
             whileInView={{
               opacity: 1,
-              x: 0,
+              y: 0,
               transition: {
                 delay: 0.4,
                 duration: 0.5,
@@ -194,7 +194,7 @@ const ProjectBanner = ({
           </div>
         </div>
         {/* Content Right - stack - mobile */}
-        <BtnStack contentType={contentType} className="hidden lg:contents" />
+        <BtnStack contentType={contentType}  className="hidden lg:contents" />
         <div className="contents md:hidden">
           <hr />
         </div>
