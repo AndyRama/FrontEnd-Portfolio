@@ -25,7 +25,7 @@ const projectsData = [
     developpement: 'Full-Stack',
     image: Idoctor,
     contentType: '',
-    btn: { href: 'projects/Unlcoaching-jeremy-prat' },
+    btn: { href: 'projects/I-doctor' },
     btn1: { href: 'https://project-pj-03.vercel.app' },
     description: `J'ai eu l'opportunité de travailler sur divers projets stimulants qui m'ont permis d'affiner mes compétences et d'explorer 
                   les dernières technologies du web. Mon portfolio reflète mon engagement envers la création d'interfaces utilisateur intuitives et 
@@ -40,7 +40,7 @@ const projectsData = [
     developpement: 'Full-Stack',
     image: Express,
     contentType: 'project',
-    btn: { href: 'projects/Express-depannage-plomberie' },
+    btn: { href: 'projects/Express-plomberie' },
     btn1: { href: 'https://express-depannage-plomberie.vercel.app' },
     description: `J'ai eu l'opportunité de travailler sur divers projets stimulants qui m'ont permis d'affiner mes compétences et d'explorer 
                   les dernières technologies du web. Mon portfolio reflète mon engagement envers la création d'interfaces utilisateur intuitives et 
@@ -55,7 +55,7 @@ const projectsData = [
     developpement: 'Full-Stack',
     image: UnlcoachingImage,
     contentType: '',
-    btn: { href: 'projects/Unlcoaching-jeremy-prat' },
+    btn: { href: 'projects/Unlcoaching' },
     btn1: { href: 'https://project-pj-03.vercel.app' },
     description: `J'ai eu l'opportunité de travailler sur divers projets stimulants qui m'ont permis d'affiner mes compétences et d'explorer 
                   les dernières technologies du web. Mon portfolio reflète mon engagement envers la création d'interfaces utilisateur intuitives et 
@@ -70,7 +70,7 @@ const projectsData = [
     developpement: 'Full-Stack',
     image: HomePortfolio,
     contentType: 'project',
-    btn: { href: '#' },
+    btn: { href: 'projects/Lemurian' },
     btn1: { href: 'https://portfolio-eta-three-93.vercel.app/' },
     description: `J'ai eu l'opportunité de travailler sur divers projets stimulants qui m'ont permis d'affiner mes compétences et d'explorer 
                   les dernières technologies du web. Mon portfolio reflète mon engagement envers la création d'interfaces utilisateur intuitives et 
@@ -85,7 +85,7 @@ const projectsData = [
     developpement: 'Full-Stack',
     image: UnlcoachingImage2,
     contentType: 'project',
-    btn: { href: 'projects/Unlcoaching-jeremy-prat' },
+    btn: { href: 'projects/UnlcoachingV1' },
     btn1: { href: 'https://www.unlcoaching.com' },
     description: `J'ai eu l'opportunité de travailler sur divers projets stimulants qui m'ont permis d'affiner mes compétences et d'explorer 
                   les dernières technologies du web. Mon portfolio reflète mon engagement envers la création d'interfaces utilisateur intuitives et 
