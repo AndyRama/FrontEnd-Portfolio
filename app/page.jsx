@@ -103,7 +103,7 @@ const projectsData = [
     developpement: 'Full-Stack',
     image: HomeWealth,
     contentType: 'project',
-    btn: { href: 'project/WealthHealth' },
+    btn: { href: 'projects/WealthHealth' },
     btn1: { href: 'https://andy-ramaroson-14-25112021.vercel.app' },
     description: `J'ai eu l'opportunité de travailler sur divers projets stimulants qui m'ont permis d'affiner mes compétences et d'explorer 
                                 les dernières technologies du web. Mon portfolio reflète mon engagement envers la création d'interfaces utilisateur intuitives et 
@@ -118,7 +118,7 @@ const projectsData = [
     developpement: 'Full-Stack',
     image: Portfolio,
     contentType: 'project',
-    btn: { href: 'project/Andyramaroson' },
+    btn: { href: 'projects/Andyramaroson' },
     btn1: { href: 'https://andyramaroson.vercel.app' },
     description: `J'ai eu l'opportunité de travailler sur divers projets stimulants qui m'ont permis d'affiner mes compétences et d'explorer 
                   les dernières technologies du web. Mon portfolio reflète mon engagement envers la création d'interfaces utilisateur intuitives et 
