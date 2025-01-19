@@ -27,7 +27,10 @@ const projectsData = [
     contentType: '',
     btn: { href: 'projects/I-doctor' },
     btn1: { href: 'https://project-pj-03.vercel.app' },
-    description: `i-DOCTOR est une plateforme innovante de prise de rendez-vous médicaux, optimisée par un assistant intelligent. Elle permet aux médecins de planifier facilement leurs consultations par téléphone, tout en offrant un outil efficace pour gérer leur emploi du temps. Avec i-DOCTOR facilite la communication entre médecins et patients, assurant une meilleur qualité de services et optimisations de l'organisation.`,
+    description: `i-Doctor est une plateforme innovante permettant de mettre en service une prise de rendez-vous par téléphone avec un assistant I.A.
+                  Elle permet aux médecins de planifier facilement leurs consultations par téléphone, tout en optimisant efficacement la gestion de 
+                  leur emploi du temps. Avec i-DOCTOR facilite la communication entre médecins et patients tout en assurant une meilleur qualité de
+                  services et optimisations de l'organisation.`,
   },
   {
     Component: ProjectBanner,
@@ -40,9 +43,9 @@ const projectsData = [
     contentType: 'project',
     btn: { href: 'projects/Express-plomberie' },
     btn1: { href: 'https://express-depannage-plomberie.vercel.app' },
-    description: `J'ai eu l'opportunité de travailler sur divers projets stimulants qui m'ont permis d'affiner mes compétences et d'explorer 
-                  les dernières technologies du web. Mon portfolio reflète mon engagement envers la création d'interfaces utilisateur intuitives et 
-                  esthétiquement plaisantes.`,
+    description: `Le site Express Dépannage Plomberie est une plateforme dédiée aux services de plomberie d'urgence, disponible 24h/24 et 7j/7.
+                  Les utilisateurs peuvent facilement accéder aux informations sur les interventions courantes, les tarifs et les réalisations
+                  de l'entreprise. Le site met également en avant des témoignages clients et des conseils pratiques pour la gestion des urgences en plomberie`,
   },
   {
     Component: ProjectBannerR,
@@ -55,7 +58,10 @@ const projectsData = [
     contentType: '',
     btn: { href: 'projects/Unlcoaching' },
     btn1: { href: 'https://project-pj-03.vercel.app' },
-    description: `Unlcoaching est une entreprise de coaching sportif située à Bordeaux, spécialisée dans les transformations physiques et le bien-être global. Elle propose des programmes personnalisés qui combinent un entraînement rigoureux et une nutrition équilibrée, adaptés aux objectifs individuels de chaque client. L'approche d'Unlcoaching vise à promouvoir un mode de vie sain et durable, en offrant un accompagnement sur mesure pour aider chacun à atteindre ses aspirations en matière de fitness et de santé.`,
+    description: `Le site Unlcoaching est une plateforme dédiée coaching sportif située à Bordeaux dirigée par Jérémy Prat, spécialisée dans les transformations physiques et le bien-être global.
+                  Elle propose des programmes personnalisés qui combinent un entraînement rigoureux et une nutrition équilibrée, adaptés aux objectifs individuels de chaque client.
+                  L'approche d'Unlcoaching vise à promouvoir un mode de vie sain et durable, en offrant un accompagnement sur mesure pour aider chacun à atteindre ses aspirations 
+                  en matière de fitness et de santé.`,
   },
   {
     Component: ProjectBanner,
@@ -83,9 +89,10 @@ const projectsData = [
     contentType: 'project',
     btn: { href: 'projects/UnlcoachingV1' },
     btn1: { href: 'https://www.unlcoaching.com' },
-    description: `J'ai eu l'opportunité de travailler sur divers projets stimulants qui m'ont permis d'affiner mes compétences et d'explorer 
-                  les dernières technologies du web. Mon portfolio reflète mon engagement envers la création d'interfaces utilisateur intuitives et 
-                  esthétiquement plaisantes.`,
+    description: `Le site UnlcoachingV1 est la premiere version de la  plateforme dédiée coaching sportif située à Bordeaux dirigée par Jérémy Prat, spécialisée dans les transformations physiques et le bien-être global.
+                  Elle propose des programmes personnalisés qui combinent un entraînement rigoureux et une nutrition équilibrée, adaptés aux objectifs individuels de chaque client.
+                  L'approche d'Unlcoaching vise à promouvoir un mode de vie sain et durable, en offrant un accompagnement sur mesure pour aider chacun à atteindre ses aspirations 
+                  en matière de fitness et de santé.`,
   },
   {
     Component: ProjectBanner,
