@@ -27,9 +27,7 @@ const projectsData = [
     contentType: '',
     btn: { href: 'projects/I-doctor' },
     btn1: { href: 'https://project-pj-03.vercel.app' },
-    description: `J'ai eu l'opportunité de travailler sur divers projets stimulants qui m'ont permis d'affiner mes compétences et d'explorer 
-                  les dernières technologies du web. Mon portfolio reflète mon engagement envers la création d'interfaces utilisateur intuitives et 
-                  esthétiquement plaisantes.`,
+    description: `i-DOCTOR est une plateforme innovante de prise de rendez-vous médicaux, optimisée par un assistant intelligent. Elle permet aux médecins de planifier facilement leurs consultations par téléphone, tout en offrant un outil efficace pour gérer leur emploi du temps. Grâce à son interface vocal et intuitive , i-DOCTOR facilite la communication entre patients et praticiens, assurant une meilleur expérience et sécurisée pour tous les utilisateurs.`,
   },
   {
     Component: ProjectBanner,
@@ -57,9 +55,7 @@ const projectsData = [
     contentType: '',
     btn: { href: 'projects/Unlcoaching' },
     btn1: { href: 'https://project-pj-03.vercel.app' },
-    description: `J'ai eu l'opportunité de travailler sur divers projets stimulants qui m'ont permis d'affiner mes compétences et d'explorer 
-                  les dernières technologies du web. Mon portfolio reflète mon engagement envers la création d'interfaces utilisateur intuitives et 
-                  esthétiquement plaisantes.`,
+    description: `Unlcoaching est une entreprise de coaching sportif située à Bordeaux, spécialisée dans les transformations physiques et le bien-être global. Elle propose des programmes personnalisés qui combinent un entraînement rigoureux et une nutrition équilibrée, adaptés aux objectifs individuels de chaque client. L'approche d'Unlcoaching vise à promouvoir un mode de vie sain et durable, en offrant un accompagnement sur mesure pour aider chacun à atteindre ses aspirations en matière de fitness et de santé.`,
   },
   {
     Component: ProjectBanner,
