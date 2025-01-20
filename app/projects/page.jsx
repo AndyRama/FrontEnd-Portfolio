@@ -44,7 +44,7 @@ const projectsData = [
     contentType: 'project',
     btn: { href: 'projects/Express-plomberie' },
     btn1: { href: 'https://express-depannage-plomberie.vercel.app' },
-    description: `Le site Express Plomberie est une vitrine dédiée aux services de plomberie d'urgence, disponible 24h/24 et 7j/7 sur Bordeaux.
+    description: `Express Plomberie est une vitrine dédiée aux services de plomberie d'urgence, disponible 24h/24 et 7j/7 sur Bordeaux.
                   Les utilisateurs peuvent facilement accéder aux informations sur les interventions courantes, les tarifs et les réalisations
                   de l'entreprise. Le site met également en avant des témoignages clients et des conseils pratiques pour la gestion des urgences en plomberie`,
   },
@@ -88,7 +88,7 @@ const projectsData = [
     contentType: 'project',
     btn: { href: 'projects/UnlcoachingV1' },
     btn1: { href: 'https://www.unlcoaching.com' },
-    description: `Le site UnlcoachingV1 est la premiere version de la plateforme Unlcoaching dédiée coaching sportif de Jérémy Prat. L'approche d'Unlcoaching vise à promouvoir
+    description: `Le site UnlcoachingV1 est la première version de la plateforme Unlcoaching dédiée coaching sportif de Jérémy Prat. L'approche d'Unlcoaching vise à promouvoir
                   un mode de vie sain et durable, en offrant un accompagnement sur mesure pour aider chacun à atteindre ses aspirations en matière de fitness et de santé.
                   `,
   },
@@ -103,8 +103,8 @@ const projectsData = [
     contentType: 'project',
     btn: { href: 'projects/WealthHealth' },
     btn1: { href: 'https://andy-ramaroson-14-25112021.vercel.app' },
-    description: `Application web interne pour l'entreprise HRnet pour le listing des employées avec une création d'un formulaire, d'une modal de cofirmation et d'un tableau 
-                  recapitulatif des données employés`,
+    description: `Application web interne pour l'entreprise HRnet le site permet  de lister les employées avec une création dans un formulaire, d'une modal de confirmation et d'un tableau 
+                  récapitulatif des données employés`,
   },
   {
     Component: ProjectBannerR,
@@ -117,8 +117,8 @@ const projectsData = [
     contentType: 'project',
     btn: { href: 'projects/Andyramaroson' },
     btn1: { href: 'https://andyramaroson.vercel.app' },
-    description: ` Son portfolio présente divers projets, tels que Unlcoaching.com, l'agence Lemurian, démontrant sa maîtrise des technologies modernes comme Next.js, React, 
-                  Tailwind, Stripe et Shadcn-UI. `,
+    description: ` Le portfolio présente divers projets, tels que Unlcoaching.com, l'agence Lemurian. Il est la refonte du project inital avec des technologies plus modernes 
+                   comme Next.js, React, Tailwind, Stripe et Shadcn-UI. `,
   },
 ]
 
@@ -144,7 +144,6 @@ const page = () => {
           />
         )
       })}
-
       <Subscribe className="py-16 lg:py-32" />
     </>
   )
