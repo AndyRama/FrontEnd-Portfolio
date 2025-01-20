@@ -116,7 +116,7 @@ const projectsData = [
     image: HomeKasa,
     contentType: 'project',
     btn: { href: 'projects/Lemurian' },
-    btn1: { href: 'https://andyrama.github.io/AndyRamaroson_11_25112021/' },
+    btn1: { href: 'https://andyrama.github.io/' },
     description: `Le site de Kasa, plateforme de location de logements entre particuliers (plus de 500 annonces postées par jour), a été codé il y a plus de 10 ans en ASP.NET avec un code
                   legacy important. Refonte totale pour passer à une stack complète en JavaScript avec NodeJS côté Back-end, et React côté Front-end.`,
   },
