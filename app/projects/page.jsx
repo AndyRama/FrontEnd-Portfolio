@@ -98,7 +98,7 @@ const projectsData = [
     title: 'WealthHealth',
     time: '20 jrs',
     mission: 'Side Project',
-    developpement: 'Full-Stack',
+    developpement: 'Front-End',
     image: HomeWealth,
     contentType: 'project',
     btn: { href: 'projects/WealthHealth' },
@@ -106,20 +106,20 @@ const projectsData = [
     description: `Application web interne pour l'entreprise HRnet le site permet  de lister les employées avec une création dans un formulaire, d'une modal de confirmation et d'un tableau 
                   récapitulatif des données employés`,
   },
-  // {
-  //   Component: ProjectBannerR,
-  //   subTitle: 'Site vitrine',
-  //   title: 'Lemurian.fr',
-  //   time: '1 mois',
-  //   mission: 'Side Project',
-  //   developpement: 'Full-Stack',
-  //   image: HomePortfolio,
-  //   contentType: 'project',
-  //   btn: { href: 'projects/Lemurian' },
-  //   btn1: { href: 'https://portfolio-eta-three-93.vercel.app/' },
-  //   description: `Lemurian est une agence web innovante basée à Bordeaux, spécialisée dans la création de sites vitrines et le développement
-  //                 d'applications web modernes sur mesure. Fondée par Andy Ramaroson, développeur Full-Stack expert en React et Next.js`,
-  // },
+  {
+    Component: ProjectBannerR,
+    subTitle: 'Site vitrine',
+    title: 'Kasa',
+    time: '20 jrs',
+    mission: 'Side Project ',
+    developpement: 'Front-End',
+    image: HomeKasa,
+    contentType: 'project',
+    btn: { href: 'projects/Lemurian' },
+    btn1: { href: 'https://andyrama.github.io/AndyRamaroson_11_25112021/' },
+    description: `Le site de Kasa, plateforme de location de logements entre particuliers (plus de 500 annonces postées par jour), a été codé il y a plus de 10 ans en ASP.NET avec un code
+                  legacy important. Refonte totale pour passer à une stack complète en JavaScript avec NodeJS côté Back-end, et React côté Front-end.`,
+  },
 ]
 
 const page = () => {
