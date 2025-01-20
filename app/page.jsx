@@ -23,7 +23,7 @@ const projectsData = [
     image: Idoctor,
     contentType: '',
     btn: { href: 'projects/I-doctor' },
-    btn1: { href: '#' },
+    btn1: { href: 'https://www.figma.com/proto/HMFrh1iMfwK2378cPXJQg4/I-doctor?node-id=130-5658&t=AJogb9uoCBaG8PeW-1&scaling=min-zoom&content-scaling=fixed&page-id=130%3A5657&starting-point-node-id=130%3A5658' },
     description: `i-Doctor est une plateforme innovante permettant de mettre en service une prise de rendez-vous par téléphone avec un assistant I.A.
                   Elle permet aux médecins de planifier facilement leurs consultations par téléphone, tout en optimisant efficacement la gestion de 
                   leur emploi du temps.`,
