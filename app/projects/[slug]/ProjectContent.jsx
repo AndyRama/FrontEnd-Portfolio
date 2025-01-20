@@ -76,15 +76,15 @@ const ProjectContent = ({ project }) => {
           <h3 className="text-gray-400">Ressources</h3>
           <div className="flex gap-4 mt-6">
             {project.github && (
-              <a href={project.github} target="_blank" className="text-blue-600">
+              <Link href={project.github} target="_blank" className="text-blue-600">
                 GitHub
-              </a>
+              </Link>
             )}
             <br/>
             {project.herb && (
-              <a href={project.herb} target="_blank" className="text-blue-600">
+              <Link href={project.herb} target="_blank" className="text-blue-600">
                 {project.herb}
-              </a>
+              </Link>
             )}
           </div>
         </article>
