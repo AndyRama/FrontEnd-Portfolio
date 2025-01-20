@@ -9,6 +9,7 @@ import HomeKasa from './../public/images/HomeKasa.png'
 import HomeWealth from './../public/images/WealthHealth_1.png'
 import Idoctor from './../public/images/i-doctor.png'
 
+// import HomePortfolio from './../../public/images/home-portfolio.png'
 // import RecentBlog from './components/RecentBlog'
 // import Subscribe from './components/Subscribe'
 
