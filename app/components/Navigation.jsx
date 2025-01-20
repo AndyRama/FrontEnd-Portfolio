@@ -205,7 +205,7 @@ export default function Navigation() {
                       <div className="border-t border-gray-200 px-4 py-6 sm:px-6">
                         <div>
                           <Link
-                            href="https://calendly.com/andyramaroson/30min" 
+                            href="https://calendly.com/andyramaroson/15-minute-meeting-" 
                             alt="Btn Calendly"
                             target='_Blank'
                             onClick={() => setOpen(false)}

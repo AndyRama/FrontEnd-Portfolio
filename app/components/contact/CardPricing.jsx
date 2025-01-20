@@ -12,7 +12,7 @@ const CardPricingContent = {
       description:
         'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia ipsum et repellat!',
       btn: {
-        href: 'https://calendly.com/andyramaroson/30min',
+        href: 'https://calendly.com/andyramaroson/15-minute-meeting-',
         label: 'Discutons en !',
       },
     },

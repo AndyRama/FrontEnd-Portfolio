@@ -112,7 +112,7 @@ export default function Hero1() {
               transition={{ delay: 1, duration: 0.5 }}
             >
               <Link
-                href="https://calendly.com/andyramaroson/30min"
+                href="https://calendly.com/andyramaroson/15-minute-meeting-"
                 className="bg-orange-500 text-white px-6 py-3 rounded-md hover:bg-orange-600 transition duration-300"
               >
                 Prendre rendez-vous

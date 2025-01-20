@@ -3,7 +3,7 @@
 import { motion } from 'framer-motion'
 import React from 'react'
 import {
-  MdHome,
+  // MdHome,
   MdContactPage,
   MdContactPhone,
   MdContactMail,
@@ -11,9 +11,9 @@ import {
 import Image from 'next/image'
 
 const iconMapping = {
-  icon1: (
-    <MdHome className="mt-2 mr-2  border-orange-500 rounded-sm text-orange-500 bg-orange-500 bg-opacity-10" />
-  ),
+  // icon1: (
+  //   <MdHome className="mt-2 mr-2  border-orange-500 rounded-sm text-orange-500 bg-orange-500 bg-opacity-10" />
+  // ),
   icon2: (
     <MdContactPhone className="mt-1 mr-2  border-orange-500 rounded-sm text-orange-500 bg-orange-500 bg-opacity-10" />
   ),
@@ -30,8 +30,8 @@ const CardInfoContent = {
   },
   step: [
     {
-      title1: '5 Washington Square, New York, USA',
-      icon1: 'icon1',
+      // title1: '5 Washington Square, New York, USA',
+      // icon1: 'icon1',
       title2: '+06 30 83 28 75',
       icon2: 'icon2',
       title3: 'Contact@andyramaroson.com',
