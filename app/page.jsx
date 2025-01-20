@@ -9,8 +9,6 @@ import UnlcoachingImage from './../public/images/unlcoaching.png'
 import UnlcoachingImage2 from './../public/images/unlcoaching2.png'
 import Portfolio from './../public/images/portfolio.png'
 import HomePortfolio from './../public/images/home-portfolio.png'
-// import HomeStoreMastuda from './../public/images/home-store.png'
-// import HomeDashMastuda from './../public/images/home-dash.png'
 import HomeWealth from './../public/images/WealthHealth_1.png'
 import Idoctor from './../public/images/i-doctor.png'
 
@@ -72,9 +70,7 @@ const projectsData = [
     contentType: 'project',
     btn: { href: 'projects/Lemurian' },
     btn1: { href: 'https://portfolio-eta-three-93.vercel.app/' },
-    description: `J'ai eu l'opportunité de travailler sur divers projets stimulants qui m'ont permis d'affiner mes compétences et d'explorer 
-                  les dernières technologies du web. Mon portfolio reflète mon engagement envers la création d'interfaces utilisateur intuitives et 
-                  esthétiquement plaisantes.`,
+    description: `Portfolio pour valoriser le travail de Mr Ramaroson Andy en création de site web.`,
   },
   {
     Component: ProjectBannerR,
@@ -117,37 +113,6 @@ const projectsData = [
     btn1: { href: 'https://andyramaroson.vercel.app' },
     description: `Portfolio pour valoriser le travail de Mr Ramaroson Andy en création de site web.`,
   },
-  // {
-  //   Component: ProjectBanner,
-  //   subTitle: 'E-commerce',
-  //   title: 'Masuda-store',
-  //   time: 'en cours',
-  //   mission: 'Side Project',
-  //   developpement: ' Full-Stack',
-  //   image: HomeStoreMastuda,
-  //   contentType: '',
-  //   btn: { href: 'projects/Unlcoaching-jeremy-prat' },
-  //   btn1: { href: 'https://ecommerce-store-andyrama.vercel.app' },
-  //   description: `J'ai eu l'opportunité de travailler sur divers projets stimulants qui m'ont permis d'affiner mes compétences et d'explorer 
-  //                 les dernières technologies du web. Mon portfolio reflète mon engagement envers la création d'interfaces utilisateur intuitives et 
-  //                 esthétiquement plaisantes.`,
-
-  // },
-  // {
-  //   Component: ProjectBannerR,
-  //   subTitle: 'E-commerce',
-  //   title: 'Matsuda-Dashboard',
-  //   time: 'en cours',
-  //   mission: 'Side Project',
-  //   developpement: 'Full-Stack',
-  //   image: HomeDashMastuda,
-  //   contentType: '',
-  //   btn: { href: 'projects/Unlcoaching-jeremy-prat' },
-  //   btn1: { href: 'https://ecommerce-store-andyrama.vercel.app' },
-  //   description: `J'ai eu l'opportunité de travailler sur divers projets stimulants qui m'ont permis d'affiner mes compétences et d'explorer 
-  //                 les dernières technologies du web. Mon portfolio reflète mon engagement envers la création d'interfaces utilisateur intuitives et 
-  //                 esthétiquement plaisantes.`,
-  // },
 ]
 export default function Home() {
   return (
