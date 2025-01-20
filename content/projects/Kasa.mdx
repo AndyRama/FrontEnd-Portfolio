@@ -1,132 +1,78 @@
 ---
-title: 'kasa'
-description: "Fille de la grace, création de site web, avec un blog réalisait avec NextJs et React"
+title: 'Kasa'
+description: "Refonte complète du site Kasa, plateforme de location de logements entre particuliers, en utilisant React et React Router."
 type: 'Project'
-date: '2024-01-01'
-image: '/images/HomeKasa.png'
+date: '2025-01-20'
+image: '/images/Kasa.png'
 location: 'Bordeaux, FR'
-year: '2024'
+year: '2025'
 categories:
-  - title: 'vitrine'
   - title: 'application-web'
+  - title: 'location-de-logements'
 stacks:
-  - title: 'NextJs'
   - title: 'React'
-  - title: 'Vercel'
-
-herb: 'https://andy-ramaroson-14-25112021.vercel.app/'
-github: 'https://github.com/AndyRama/AndyRamaroson_14_25112021'
+  - title: 'React Router'
+  - title: 'SASS'
+  - title: 'Figma'
+herb: 'https://andyrama.github.io/AndyRamaroson_11_25112021/'
+github: 'https://github.com/AndyRama/AndyRamaroson_11_25112021'
 duration: '1 mois'
-realisation: 'Site vitrine'
-client: 'Hrnet'
+realisation: 'Refonte du site web'
+client: 'Kasa'
 ---
 
-## Besoin Client:
+## Besoin Client
 
-Le projet HRnet est une refonte complète d'une application de gestion des ressources humaines, initialement développée en jQuery, 
-vers une architecture moderne basée sur React. Cette transformation vise à réduire la dette technique et à améliorer la maintenabilité du code,
-tout en offrant une expérience utilisateur plus fluide et réactive.
+Le site de Kasa, une plateforme de location de logements entre particuliers, a été initialement développé en ASP.NET il y a plus de 10 ans. Avec l'évolution des technologies et pour répondre aux attentes modernes des utilisateurs, une refonte complète du site était nécessaire. L'objectif principal était de migrer vers une stack JavaScript moderne, en utilisant React pour le front-end et Node.js pour le back-end, afin d'améliorer la maintenabilité, les performances et l'expérience utilisateur. 
 
 ## Contexte et Objectifs du Projet
 
-L'application existante, bien que fonctionnelle, présentait des limitations en termes de performance et de flexibilité en raison de son architecture
-obsolète. L'objectif principal de ce projet était de migrer l'ensemble du code source de jQuery vers React, une bibliothèque JavaScript moderne, afin 
-de bénéficier de ses avantages en termes de réactivité, de modularité et de maintenabilité.
-
-Parallèlement à cette migration, il était essentiel de remplacer les plugins jQuery par des bibliothèques React adaptées, afin d'assurer une intégration
-harmonieuse et de tirer parti des meilleures pratiques du développement moderne.
+Le projet s'inscrit dans le cadre de la formation Développeur d'application JavaScript React chez OpenClassrooms. L'objectif était de refondre le site existant en adoptant une architecture moderne, en se basant sur les maquettes fournies via Figma, et en respectant les coding guidelines établies. 
 
 ## Technologies et Bibliothèques Utilisées
 
-Pour mener à bien cette refonte, plusieurs technologies et bibliothèques ont été intégrées :
+- **React 18** : Pour la création de composants réactifs et modulaires.
+- **React Router** : Pour la gestion des routes et de la navigation au sein de l'application.
+- **SASS** : Pour le stylage avancé et la maintenance aisée des feuilles de style.
+- **Figma** : Utilisé pour les maquettes et la référence des composants. :contentReference[oaicite:0]{index=0}
 
-    - React : Bibliothèque JavaScript pour la construction d'interfaces utilisateur dynamiques et réactives.
+## Processus de Développement
 
-    - react-datepicker : Bibliothèque React pour la gestion des sélecteurs de date, remplaçant ainsi les plugins jQuery associés.
-
-    - andyrama-modal : Composant React personnalisé pour la gestion des fenêtres modales, offrant une intégration fluide et une personnalisation aisée.
-
-    - react-select : Bibliothèque React pour la création de menus déroulants avancés, remplaçant les plugins jQuery correspondants.
-
-    - react-table : Bibliothèque React pour la gestion des tables de données, permettant une manipulation efficace et flexible des informations.
-
-## Processus de Migration et Développement
-
-La migration a été réalisée en plusieurs étapes clés :
-
-    - Analyse et Planification : Évaluation détaillée de l'application existante pour identifier les composants à migrer et les dépendances à gérer.
-          Élaboration d'un plan de migration progressif pour minimiser les risques et assurer une transition fluide.
-
-    - Mise en Place de l'Environnement React : Configuration de l'environnement de développement avec les outils nécessaires, tels que Webpack et Babel,
-          pour supporter la compilation et le bundling du code React.
-
-    - Migration des Composants : Conversion progressive des composants jQuery en composants React, en veillant à maintenir la fonctionnalité existante et
-          à améliorer la structure du code.
-
-    - Intégration des Bibliothèques React : Remplacement des plugins jQuery par les bibliothèques React sélectionnées, en adaptant le code pour tirer parti
-          de leurs fonctionnalités et de leur performance accrues.
-
-    - Tests et Validation : Mise en place de tests unitaires et fonctionnels pour assurer la qualité du code et la conformité aux exigences fonctionnelles.
-
-    - Optimisation des Performances : Analyse des performances de l'application et mise en œuvre d'optimisations pour garantir une expérience utilisateur 
-          fluide et réactive.
+- **Initialisation du Projet** : Mise en place de l'environnement de développement avec Create React App, intégration de React Router pour la gestion des routes, et configuration de SASS pour le stylage.
+- **Développement des Composants** : Création de composants modulaires et réutilisables en React, en suivant les bonnes pratiques et en respectant les maquettes fournies.
+- **Gestion des Routes** : Implémentation de la navigation entre les différentes pages du site en utilisant React Router, assurant une expérience utilisateur fluide.
+- **Tests et Validation** : Réalisation de tests pour vérifier le bon fonctionnement de chaque composant et de l'application dans son ensemble.
 
 ## Résultats et Bénéfices
 
-La refonte de l'application a permis d'atteindre plusieurs objectifs clés :
-
-    - Réduction de la Dette Technique : En adoptant une architecture moderne et en remplaçant les plugins obsolètes, la dette technique a été significativement réduite, facilitant ainsi la maintenance et l'évolution future de l'application.
-
-    - Amélioration des Performances : L'utilisation de React et de bibliothèques spécialisées a permis d'optimiser les performances de l'application, offrant une expérience utilisateur plus fluide et réactive.
-
-    - Facilité de Maintenance : La modularité et la clarté du code React facilitent la maintenance et l'ajout de nouvelles fonctionnalités, réduisant ainsi le temps et les coûts associés.
-
-    - Meilleure Expérience Utilisateur : L'application offre désormais une interface plus intuitive et réactive, répondant mieux aux attentes des utilisateurs finaux.
+- **Modernisation de l'Application** : Transition réussie vers une stack JavaScript moderne, améliorant la maintenabilité et les performances du site.
+- **Expérience Utilisateur Améliorée** : Interface utilisateur plus réactive et intuitive, conforme aux standards actuels du web.
+- **Facilité de Maintenance** : Codebase structurée et modulaire, facilitant les futures évolutions et ajouts de fonctionnalités.
 
 ## Compétences Développées
 
-Ce projet a permis de développer et de renforcer plusieurs compétences clés :
-
-    - Migration d'Applications : Expérience pratique dans la migration d'applications existantes vers des technologies modernes, en gérant les défis liés à la compatibilité et à la transition.
-
-    - Intégration de Bibliothèques React : Maîtrise de l'intégration et de l'utilisation de diverses bibliothèques React pour enrichir les fonctionnalités de l'application.
-
-    - Optimisation des Performances : Compétences en analyse et optimisation des performances des applications web, en identifiant et en résolvant les goulots d'étranglement.
-
-    - Gestion de Projet : Capacité à planifier, exécuter et livrer un projet complexe en respectant les délais et les exigences fonctionnelles.
+- **Initialisation d'une Application Web avec un Framework** : Maîtrise de la configuration et du démarrage d'un projet React.
+- **Création de Composants avec React** : Capacité à développer des composants réutilisables et maintenables.
+- **Développement des Routes avec React Router** : Compétence dans la gestion de la navigation au sein d'une application monopage.
 
 ### Ressources et Outils
 
-    - Maquettes : Figma pour la création des prototypes et des maquettes de l'interface utilisateur.
-
-    - Gestion de Projet : Trello pour le suivi des tâches et la gestion de l'avancement du projet.
-
-    - Éditeur de Code : Visual Studio Code pour le développement du site.
-
-    - Contrôle de Version : Git et GitHub pour la gestion des versions et la collaboration.
+- **Maquettes** : Figma pour la conception et la référence des composants.
+- **Gestion de Projet** : Suivi des tâches et des deadlines pour assurer le respect du planning.
+- **Éditeur de Code** : Visual Studio Code pour le développement de l'application.
+- **Contrôle de Version** : Git et GitHub pour la gestion des versions et la collaboration.
 
 ### Prérequis
 
-    - Git : Pour cloner le projet et gérer les versions du code.
-
-    - Node.js (version 18.18.1) : Pour exécuter les commandes et installer les dépendances.
-
-    - npm (version 6.14.17) : Pour la gestion des packages JavaScript et l'installation des dépendances.
+- **Git** : Pour cloner le projet et gérer les versions du code.
+- **Node.js** : Pour exécuter les commandes et installer les dépendances.
+- **npm** : Pour la gestion des packages JavaScript et l'installation des dépendances.
 
 ### Accès au Projet
 
-    - Code Source : GitHub[AndyRama/AndyRamaroson_14_25112021] - 
-
-    - Pré-production : Vercel[]
-
-    - Production : Vercel[]
-
+- **Code Source** : Disponible sur GitHub : 
+- **Site Déployé** : Accessible à l'adresse suivante : 
 
 ## Conclusion
 
-La refonte de l'application HRnet représente une étape significative vers l'adoption de technologies modernes et l'amélioration continue des processus de développement. 
-Elle illustre l'engagement envers l'excellence technique et la satisfaction des utilisateurs finaux. Ce projet démontre également la capacité à gérer des migrations complexes 
-et à intégrer efficacement des bibliothèques React pour enrichir les fonctionnalités d'une application existante.
-
-Ce projet illustre l'engagement d'Andy Ramaroson dans l'amélioration continue de ses compétences en développement web et sa capacité à moderniser
-des applications existantes en utilisant des technologies de pointe.
+La refonte du site Kasa a permis de moderniser l'application en adoptant des technologies actuelles, améliorant ainsi l'expérience utilisateur et facilitant la maintenance future. Ce projet démontre une expertise dans le développement front-end moderne et la capacité à mener à bien des projets de refonte complète.

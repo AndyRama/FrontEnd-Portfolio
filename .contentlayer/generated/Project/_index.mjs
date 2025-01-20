@@ -4,10 +4,10 @@ import projects__andyramarosonMdx from './projects__Andyramaroson.mdx.json' asse
 import projects__expressPlomberieMdx from './projects__Express-plomberie.mdx.json' assert { type: 'json' }
 import projects__filleDeLaGraceMdx from './projects__Fille-de-la-grace.mdx.json' assert { type: 'json' }
 import projects__iDoctorMdx from './projects__I-doctor.mdx.json' assert { type: 'json' }
+import projects__kasaMdx from './projects__Kasa.mdx.json' assert { type: 'json' }
 import projects__lemurianMdx from './projects__Lemurian.mdx.json' assert { type: 'json' }
 import projects__unlcoachingMdx from './projects__Unlcoaching.mdx.json' assert { type: 'json' }
 import projects__unlcoachingV1Mdx from './projects__UnlcoachingV1.mdx.json' assert { type: 'json' }
 import projects__wealthHealthMdx from './projects__WealthHealth.mdx.json' assert { type: 'json' }
-import projects__kasaMdx from './projects__kasa.mdx.json' assert { type: 'json' }
 
-export const allProjects = [projects__andyramarosonMdx, projects__expressPlomberieMdx, projects__filleDeLaGraceMdx, projects__iDoctorMdx, projects__lemurianMdx, projects__unlcoachingMdx, projects__unlcoachingV1Mdx, projects__wealthHealthMdx, projects__kasaMdx]
+export const allProjects = [projects__andyramarosonMdx, projects__expressPlomberieMdx, projects__filleDeLaGraceMdx, projects__iDoctorMdx, projects__kasaMdx, projects__lemurianMdx, projects__unlcoachingMdx, projects__unlcoachingV1Mdx, projects__wealthHealthMdx]
