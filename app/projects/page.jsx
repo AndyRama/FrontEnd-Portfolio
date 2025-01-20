@@ -11,7 +11,7 @@ import UnlcoachingImage2 from './../../public/images/unlcoaching2.png'
 import Portfolio from './../../public/images/portfolio.png'
 import HomeWealth from './../../public/images/WealthHealth_2.png'
 import Idoctor from './../../public/images/i-doctor.png'
-import HomeKasa from './../public/images/HomeKasa.png'
+import HomeKasa from './../../public/images/HomeKasa.png'
 
 // import HomePortfolio from './../../public/images/home-portfolio.png'
 
