@@ -26,11 +26,10 @@ const projectsData = [
     image: Idoctor,
     contentType: '',
     btn: { href: 'projects/I-doctor' },
-    btn1: { href: 'https://project-pj-03.vercel.app' },
+    btn1: { href: '#' },
     description: `i-Doctor est une plateforme innovante permettant de mettre en service une prise de rendez-vous par téléphone avec un assistant I.A.
                   Elle permet aux médecins de planifier facilement leurs consultations par téléphone, tout en optimisant efficacement la gestion de 
-                  leur emploi du temps. Avec i-DOCTOR facilite la communication entre médecins et patients tout en assurant une meilleur qualité de
-                  services et optimisations de l'organisation.`,
+                  leur emploi du temps.`,
   },
   {
     Component: ProjectBanner,
@@ -43,7 +42,7 @@ const projectsData = [
     contentType: 'project',
     btn: { href: 'projects/Express-plomberie' },
     btn1: { href: 'https://express-depannage-plomberie.vercel.app' },
-    description: `Le site Express Dépannage Plomberie est une plateforme dédiée aux services de plomberie d'urgence, disponible 24h/24 et 7j/7.
+    description: `Le site Express Plomberie est une vitrine dédiée aux services de plomberie d'urgence, disponible 24h/24 et 7j/7 sur Bordeaux.
                   Les utilisateurs peuvent facilement accéder aux informations sur les interventions courantes, les tarifs et les réalisations
                   de l'entreprise. Le site met également en avant des témoignages clients et des conseils pratiques pour la gestion des urgences en plomberie`,
   },
@@ -60,8 +59,7 @@ const projectsData = [
     btn1: { href: 'https://project-pj-03.vercel.app' },
     description: `Le site Unlcoaching est une plateforme dédiée coaching sportif située à Bordeaux dirigée par Jérémy Prat, spécialisée dans les transformations physiques et le bien-être global.
                   Elle propose des programmes personnalisés qui combinent un entraînement rigoureux et une nutrition équilibrée, adaptés aux objectifs individuels de chaque client.
-                  L'approche d'Unlcoaching vise à promouvoir un mode de vie sain et durable, en offrant un accompagnement sur mesure pour aider chacun à atteindre ses aspirations 
-                  en matière de fitness et de santé.`,
+                 `,
   },
   {
     Component: ProjectBanner,
@@ -89,10 +87,9 @@ const projectsData = [
     contentType: 'project',
     btn: { href: 'projects/UnlcoachingV1' },
     btn1: { href: 'https://www.unlcoaching.com' },
-    description: `Le site UnlcoachingV1 est la premiere version de la  plateforme dédiée coaching sportif située à Bordeaux dirigée par Jérémy Prat, spécialisée dans les transformations physiques et le bien-être global.
-                  Elle propose des programmes personnalisés qui combinent un entraînement rigoureux et une nutrition équilibrée, adaptés aux objectifs individuels de chaque client.
-                  L'approche d'Unlcoaching vise à promouvoir un mode de vie sain et durable, en offrant un accompagnement sur mesure pour aider chacun à atteindre ses aspirations 
-                  en matière de fitness et de santé.`,
+    description: `Le site UnlcoachingV1 est la premiere version de la plateforme Unlcoaching dédiée coaching sportif de Jérémy Prat. L'approche d'Unlcoaching vise à promouvoir
+                   un mode de vie sain et durable, en offrant un accompagnement sur mesure pour aider chacun à atteindre ses aspirations en matière de fitness et de santé.
+                  `,
   },
   {
     Component: ProjectBanner,
@@ -105,9 +102,7 @@ const projectsData = [
     contentType: 'project',
     btn: { href: 'projects/WealthHealth' },
     btn1: { href: 'https://andy-ramaroson-14-25112021.vercel.app' },
-    description: `J'ai eu l'opportunité de travailler sur divers projets stimulants qui m'ont permis d'affiner mes compétences et d'explorer 
-                                les dernières technologies du web. Mon portfolio reflète mon engagement envers la création d'interfaces utilisateur intuitives et 
-                                esthétiquement plaisantes.`,
+    description: `Application web interne pour l'entreprise HRnet pour le listing des employées avec une création d'un formulaire, d'une modal de cofirmation et d'un tableau recapitulatif des données employés`,
   },
   {
     Component: ProjectBannerR,
@@ -120,9 +115,7 @@ const projectsData = [
     contentType: 'project',
     btn: { href: 'projects/Andyramaroson' },
     btn1: { href: 'https://andyramaroson.vercel.app' },
-    description: `J'ai eu l'opportunité de travailler sur divers projets stimulants qui m'ont permis d'affiner mes compétences et d'explorer 
-                  les dernières technologies du web. Mon portfolio reflète mon engagement envers la création d'interfaces utilisateur intuitives et 
-                  esthétiquement plaisantes.`,
+    description: `Portfolio pour valoriser le travail de Mr Ramaroson Andy en création de site web.`,
   },
   // {
   //   Component: ProjectBanner,

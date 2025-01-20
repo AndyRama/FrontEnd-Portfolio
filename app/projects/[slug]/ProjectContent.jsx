@@ -91,9 +91,9 @@ const ProjectContent = ({ project }) => {
       </div>
 
       {/* More Projects */}
-      <div className="mt-20">
+      {/* <div className="mt-20">
         <RecentBlog />
-      </div>
+      </div> */}
     </motion.div>
   )
 }
