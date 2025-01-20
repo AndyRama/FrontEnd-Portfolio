@@ -44,12 +44,12 @@ const footerContent = {
       heading: 'Performance',
       links: [
         {
-          href: 'https://googlechrome.github.io/lighthouse/viewer/?psiurl=https%3A%2F%2Fportfolio-eta-three-93.vercel.app%2F&strategy=desktop&category=performance&category=accessibility&category=best-practices&category=seo&utm_source=lh-chrome-ext#',
+          href: 'https://googlechrome.github.io/lighthouse/viewer/?psiurl=https%3A%2F%2Fandyramaroson.vercel.app%2F&strategy=desktop&category=performance&category=accessibility&category=best-practices&category=seo&utm_source=lh-chrome-ext#',
           label: 'LighHouse',
           target: '_blank',
         },
         {
-          href: 'https://www.websitecarbon.com/website/portfolio-eta-three-93-vercel-app/',
+          href: 'https://www.websitecarbon.com/website/andyramaroson.vercel.app/',
           label: 'CO2',
           badge: 'New',
           target: '_blank',

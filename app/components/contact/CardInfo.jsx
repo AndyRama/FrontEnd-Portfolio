@@ -34,7 +34,7 @@ const CardInfoContent = {
       // icon1: 'icon1',
       title2: '+06 30 83 28 75',
       icon2: 'icon2',
-      title3: 'Contact@andyramaroson.com',
+      title3: 'andyramaroson@gmail.fr',
       icon3: 'icon3',
     },
   ],
