@@ -66,16 +66,16 @@ const projectsData = [
   {
     Component: ProjectBanner,
     subTitle: 'Site vitrine',
-    title: 'Lemurian.fr',
+    title: 'Andyramaroson.com',
     time: '1 mois',
     mission: 'Side Project',
     developpement: 'Full-Stack',
-    image: HomePortfolio,
+    image: Portfolio,
     contentType: 'project',
-    btn: { href: 'projects/Lemurian' },
-    btn1: { href: 'https://portfolio-eta-three-93.vercel.app/' },
-    description: `Lemurian est une agence web innovante basée à Bordeaux, spécialisée dans la création de sites vitrines et le développement
-                  d'applications web modernes sur mesure. Fondée par Andy Ramaroson, développeur Full-Stack expert en React et Next.js`,
+    btn: { href: 'projects/Andyramaroson' },
+    btn1: { href: 'https://andyramaroson.vercel.app' },
+    description: ` Le portfolio présente divers projets, tels que Unlcoaching.com, l'agence Lemurian. Il est la refonte du project inital avec des technologies plus modernes 
+                   comme Next.js, React, Tailwind, Stripe et Shadcn-UI. `,
   },
   {
     Component: ProjectBannerR,
@@ -106,20 +106,20 @@ const projectsData = [
     description: `Application web interne pour l'entreprise HRnet le site permet  de lister les employées avec une création dans un formulaire, d'une modal de confirmation et d'un tableau 
                   récapitulatif des données employés`,
   },
-  {
-    Component: ProjectBannerR,
-    subTitle: 'Site vitrine',
-    title: 'Andyramaroson.com',
-    time: '1 mois',
-    mission: 'Side Project',
-    developpement: 'Full-Stack',
-    image: Portfolio,
-    contentType: 'project',
-    btn: { href: 'projects/Andyramaroson' },
-    btn1: { href: 'https://andyramaroson.vercel.app' },
-    description: ` Le portfolio présente divers projets, tels que Unlcoaching.com, l'agence Lemurian. Il est la refonte du project inital avec des technologies plus modernes 
-                   comme Next.js, React, Tailwind, Stripe et Shadcn-UI. `,
-  },
+  // {
+  //   Component: ProjectBannerR,
+  //   subTitle: 'Site vitrine',
+  //   title: 'Lemurian.fr',
+  //   time: '1 mois',
+  //   mission: 'Side Project',
+  //   developpement: 'Full-Stack',
+  //   image: HomePortfolio,
+  //   contentType: 'project',
+  //   btn: { href: 'projects/Lemurian' },
+  //   btn1: { href: 'https://portfolio-eta-three-93.vercel.app/' },
+  //   description: `Lemurian est une agence web innovante basée à Bordeaux, spécialisée dans la création de sites vitrines et le développement
+  //                 d'applications web modernes sur mesure. Fondée par Andy Ramaroson, développeur Full-Stack expert en React et Next.js`,
+  // },
 ]
 
 const page = () => {
