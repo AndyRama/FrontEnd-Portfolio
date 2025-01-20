@@ -74,7 +74,8 @@ const projectsData = [
     contentType: 'project',
     btn: { href: 'projects/Lemurian' },
     btn1: { href: 'https://portfolio-eta-three-93.vercel.app/' },
-    description: `Portfolio pour valoriser le travail de Mr Ramaroson Andy en création de site web.`,
+    description: `Lemurian est une agence web innovante basée à Bordeaux, spécialisée dans la création de sites vitrines et le développement
+                  d'applications web modernes sur mesure. Fondée par Andy Ramaroson, développeur Full-Stack expert en React et Next.js`,
   },
   {
     Component: ProjectBannerR,
@@ -102,7 +103,8 @@ const projectsData = [
     contentType: 'project',
     btn: { href: 'projects/WealthHealth' },
     btn1: { href: 'https://andy-ramaroson-14-25112021.vercel.app' },
-    description: `Application web interne pour l'entreprise HRnet pour le listing des employées avec une création d'un formulaire, d'une modal de cofirmation et d'un tableau recapitulatif des données employés`,
+    description: `Application web interne pour l'entreprise HRnet pour le listing des employées avec une création d'un formulaire, d'une modal de cofirmation et d'un tableau 
+                  recapitulatif des données employés`,
   },
   {
     Component: ProjectBannerR,
@@ -115,7 +117,8 @@ const projectsData = [
     contentType: 'project',
     btn: { href: 'projects/Andyramaroson' },
     btn1: { href: 'https://andyramaroson.vercel.app' },
-    description: `Portfolio pour valoriser le travail de Mr Ramaroson Andy en création de site web.`,
+    description: ` Son portfolio présente divers projets, tels que Unlcoaching.com, l'agence Lemurian, démontrant sa maîtrise des technologies modernes comme Next.js, React, 
+                  Tailwind, Stripe et Shadcn-UI. `,
   },
 ]
 
@@ -127,9 +130,8 @@ const page = () => {
         subTitle="Dernier ajout"
         title="Projets réalisés"
         image={TeamImage}
-        description={`J'ai eu l'opportunité de travailler sur divers projets stimulants qui m'ont permis d'affiner mes compétences et d'explorer 
-                      les dernières technologies du web. Mon portfolio reflète mon engagement envers la création d'interfaces utilisateur intuitives et 
-                      esthétiquement plaisantes.`}
+        description={` Mes projets sont divers tels que Unlcoaching.com, Lemurian,... j'utilise des technologies modernes comme Next.js, React, Tailwind, Stripe
+                       et Shadcn-UI. `}
       />
 
       {projectsData.map((project, index) => {

@@ -1,9 +1,6 @@
 import Hero2 from './components/Hero2'
-// import RecentBlog from './components/RecentBlog'
-import Subscribe from './components/Subscribe'
 import ProjectBanner from './components/project/ProjectBanner'
 import ProjectBannerR from './components/project/ProjectBannerR'
-
 import Express from './../public/images/Express4.png'
 import UnlcoachingImage from './../public/images/unlcoaching.png'
 import UnlcoachingImage2 from './../public/images/unlcoaching2.png'
@@ -12,6 +9,8 @@ import HomePortfolio from './../public/images/home-portfolio.png'
 import HomeWealth from './../public/images/WealthHealth_1.png'
 import Idoctor from './../public/images/i-doctor.png'
 
+// import RecentBlog from './components/RecentBlog'
+// import Subscribe from './components/Subscribe'
 
 const projectsData = [
   {
@@ -70,7 +69,8 @@ const projectsData = [
     contentType: 'project',
     btn: { href: 'projects/Lemurian' },
     btn1: { href: 'https://portfolio-eta-three-93.vercel.app/' },
-    description: `Portfolio pour valoriser le travail de Mr Ramaroson Andy en création de site web.`,
+    description: `Lemurian est une agence web innovante basée à Bordeaux, spécialisée dans la création de sites vitrines et le développement
+                  d'applications web modernes sur mesure. Fondée par Andy Ramaroson, développeur Full-Stack expert en React et Next.js`,
   },
   {
     Component: ProjectBannerR,
@@ -84,7 +84,7 @@ const projectsData = [
     btn: { href: 'projects/UnlcoachingV1' },
     btn1: { href: 'https://www.unlcoaching.com' },
     description: `Le site UnlcoachingV1 est la premiere version de la plateforme Unlcoaching dédiée coaching sportif de Jérémy Prat. L'approche d'Unlcoaching vise à promouvoir
-                   un mode de vie sain et durable, en offrant un accompagnement sur mesure pour aider chacun à atteindre ses aspirations en matière de fitness et de santé.
+                  un mode de vie sain et durable, en offrant un accompagnement sur mesure pour aider chacun à atteindre ses aspirations en matière de fitness et de santé.
                   `,
   },
   {
@@ -98,7 +98,8 @@ const projectsData = [
     contentType: 'project',
     btn: { href: 'projects/WealthHealth' },
     btn1: { href: 'https://andy-ramaroson-14-25112021.vercel.app' },
-    description: `Application web interne pour l'entreprise HRnet pour le listing des employées avec une création d'un formulaire, d'une modal de cofirmation et d'un tableau recapitulatif des données employés`,
+    description: `Application web interne pour l'entreprise HRnet pour le listing des employées avec une création d'un formulaire, d'une modal de cofirmation et d'un tableau 
+                  recapitulatif des données employés`,
   },
   {
     Component: ProjectBannerR,
@@ -111,7 +112,8 @@ const projectsData = [
     contentType: 'project',
     btn: { href: 'projects/Andyramaroson' },
     btn1: { href: 'https://andyramaroson.vercel.app' },
-    description: `Portfolio pour valoriser le travail de Mr Ramaroson Andy en création de site web.`,
+    description: ` le portfolio présente divers projets, tels que Unlcoaching.com, l'agence Lemurian, démontrant sa maîtrise des technologies modernes comme Next.js, React, 
+                  Tailwind, Stripe et Shadcn-UI. `,
   },
 ]
 export default function Home() {
@@ -129,7 +131,7 @@ export default function Home() {
         )
       })}
       {/* <RecentBlog className="pt-14 pb-15 " /> */}
-      <Subscribe className="py-16 lg:py-32 " />
+      {/* <Subscribe className="py-16 lg:py-32 " /> */}
     </>
   )
 }
