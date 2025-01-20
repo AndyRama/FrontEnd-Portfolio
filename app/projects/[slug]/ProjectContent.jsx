@@ -60,7 +60,39 @@ const ProjectContent = ({ project }) => {
 
         {/* Article */}
         <article className="prose mx-auto max-w-2xl">
-          {/* Stacks */}
+          <div className="mx-auto max-w32xl mb-10">
+            <div className=" flex justify-between ">
+              <div
+                className="border-l border-gray-200 relative pl-3 before:content-['']
+                before:top-0 before:-left-[1px] before:absolute before:h-7 before:w-[1px]
+                before:bg-orange-600"
+              >
+                {/* Content Client */}
+                <span className="block text-gray-400">Client</span>
+                <span>{project.client}</span>
+              </div>
+
+              {/* Content Year */}
+              <div
+                className="border-l border-gray-200 relative pl-3 before:content-['']
+                before:top-0 before:-left-[1px] before:absolute before:h-7 before:w-[1px]
+                before:bg-orange-600"
+              >
+                <span className="block text-gray-400">Year</span>
+                <span>{project.year}</span>
+              </div>
+
+              {/* Content Role */}
+              <div
+                className="border-l border-gray-200 relative pl-3 before:content-['']
+                before:top-0 before:-left-[1px] before:absolute before:h-7 before:w-[1px]
+                before:bg-orange-600"
+              >
+                <span className="block text-gray-400">Durée</span>
+                <span>{project.duration}</span>
+              </div>
+            </div>
+          </div>
           <MDXContent />
           <div className="mt-10">
             <h3 className="text-gray-400">Technologies utilisées</h3>
@@ -80,7 +112,7 @@ const ProjectContent = ({ project }) => {
                 GitHub
               </Link>
             )}
-            <br/>
+            <br />
             {project.herb && (
               <Link href={project.herb} target="_blank" className="text-blue-600">
                 {project.herb}
