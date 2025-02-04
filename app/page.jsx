@@ -67,7 +67,7 @@ const projectsData = [
     mission: 'Side Project OCR',
     developpement: 'Full-Stack',
     image: Portfolio,
-    contentType: '',
+    contentType: 'project',
     btn: { href: 'projects/Andyramaroson' },
     btn1: { href: 'https://andyramaroson.vercel.app' },
     description: ` Le portfolio présente divers projets, tels que Unlcoaching.com, l'agence Lemurian. Il est la refonte du project inital avec des technologies plus modernes 
@@ -81,7 +81,7 @@ const projectsData = [
     mission: 'Client final',
     developpement: 'Full-Stack',
     image: UnlcoachingImage2,
-    contentType: 'project',
+    contentType: '',
     btn: { href: 'projects/UnlcoachingV1' },
     btn1: { href: 'https://www.unlcoaching.com' },
     description: `Le site UnlcoachingV1 est la première version de la plateforme Unlcoaching dédiée coaching sportif de Jérémy Prat. L'approche d'Unlcoaching vise à promouvoir
