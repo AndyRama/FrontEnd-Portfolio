@@ -22,7 +22,7 @@ const projectsData = [
     mission: 'Side project',
     developpement: 'Full-Stack',
     image: Idoctor,
-    contentType: 'project',
+    contentType: '',
     btn: { href: 'projects/I-doctor' },
     btn1: { href: '#' },
     description: `i-Doctor est une plateforme innovante permettant de mettre en service une prise de rendez-vous par téléphone avec un assistant I.A.
@@ -52,7 +52,7 @@ const projectsData = [
     mission: 'Client Final',
     developpement: 'Full-Stack',
     image: UnlcoachingImage,
-    contentType: 'project',
+    contentType: '',
     btn: { href: 'projects/Unlcoaching' },
     btn1: { href: 'https://project-pj-03.vercel.app' },
     description: `Le site Unlcoaching est une plateforme dédiée coaching sportif située à Bordeaux dirigée par Jérémy Prat, spécialisée dans les transformations physiques et le bien-être global.
@@ -67,7 +67,7 @@ const projectsData = [
     mission: 'Side Project OCR',
     developpement: 'Full-Stack',
     image: Portfolio,
-    contentType: 'project',
+    contentType: '',
     btn: { href: 'projects/Andyramaroson' },
     btn1: { href: 'https://andyramaroson.vercel.app' },
     description: ` Le portfolio présente divers projets, tels que Unlcoaching.com, l'agence Lemurian. Il est la refonte du project inital avec des technologies plus modernes 
