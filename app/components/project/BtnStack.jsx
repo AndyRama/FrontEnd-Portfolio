@@ -16,6 +16,8 @@ import { FaFigma } from 'react-icons/fa6'
 import { FaTrello } from 'react-icons/fa6'
 import { BsFillShieldLockFill } from 'react-icons/bs'
 import { TbDatabaseHeart } from 'react-icons/tb'
+import { BiLogoPostgresql } from "react-icons/bi";
+import { RiVercelFill } from "react-icons/ri";
 
 const iconMappingProjectCode = {
   icon1: (
@@ -104,10 +106,10 @@ const iconMappingProjectNoCode = {
     <FaCcStripe className="mt-1 mr-2 rounded-sm text-black-300 border border-gray-200 bg-opacity-10" />
   ),
   icon6: (
-    <TbDatabaseHeart className="mt-1 mr-2 rounded-sm text-black-300 border border-gray-200 bg-opacity-10" />
+    <SiVercel  className="mt-1 mr-2 rounded-sm text-black-300 border border-gray-200 bg-opacity-10" />
   ),
   icon7: (
-    <TbDatabaseHeart className="mt-1 mr-2 rounded-sm text-black-300 border border-gray-200 bg-opacity-10" />
+    <BiLogoPostgresql  className="mt-1 mr-2 rounded-sm text-black-300 border border-gray-200 bg-opacity-10" />
   ),
   icon8: (
     <BsFillShieldLockFill className="mt-1 mr-2 rounded-sm text-black-300 border border-gray-200 bg-opacity-10" />
@@ -139,9 +141,9 @@ const BtnStackContentProjectNoCode = {
       icon3: 'icon3',
       title4: 'Github',
       icon4: 'icon4',
-      title5: 'Vercel',
+      title5: 'Stripe',
       icon5: 'icon5',
-      title6: 'Stripe',
+      title6: 'Vercel',
       icon6: 'icon6',
       title7: 'Postgres',
       icon7: 'icon7',

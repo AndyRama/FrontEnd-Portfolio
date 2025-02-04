@@ -19,12 +19,12 @@ const projectsData = [
     subTitle: 'Site vitrine',
     title: 'I-doctor.fr',
     time: 'en cours',
-    mission: 'Client Final',
+    mission: 'Side project',
     developpement: 'Full-Stack',
     image: Idoctor,
-    contentType: '',
+    contentType: 'project',
     btn: { href: 'projects/I-doctor' },
-    btn1: { href: 'https://www.figma.com/proto/HMFrh1iMfwK2378cPXJQg4/I-doctor?node-id=130-5658&t=AJogb9uoCBaG8PeW-1&scaling=min-zoom&content-scaling=fixed&page-id=130%3A5657&starting-point-node-id=130%3A5658' },
+    btn1: { href: '#' },
     description: `i-Doctor est une plateforme innovante permettant de mettre en service une prise de rendez-vous par téléphone avec un assistant I.A.
                   Elle permet aux médecins de planifier facilement leurs consultations par téléphone, tout en optimisant efficacement la gestion de 
                   leur emploi du temps.`,
@@ -52,11 +52,11 @@ const projectsData = [
     mission: 'Client Final',
     developpement: 'Full-Stack',
     image: UnlcoachingImage,
-    contentType: '',
+    contentType: 'project',
     btn: { href: 'projects/Unlcoaching' },
     btn1: { href: 'https://project-pj-03.vercel.app' },
     description: `Le site Unlcoaching est une plateforme dédiée coaching sportif située à Bordeaux dirigée par Jérémy Prat, spécialisée dans les transformations physiques et le bien-être global.
-                  Elle propose des programmes personnalisés qui combinent un entraînement rigoureux et une nutrition équilibrée, adaptés aux objectifs individuels de chaque client.
+                  Il propose des programmes personnalisés qui combinent un entraînement rigoureux et une nutrition équilibrée, adaptés aux objectifs individuels de chaque client.
                  `,
   },
   {
@@ -64,7 +64,7 @@ const projectsData = [
     subTitle: 'Site vitrine',
     title: 'Andyramaroson.com',
     time: '1 mois',
-    mission: 'Side Project',
+    mission: 'Side Project OCR',
     developpement: 'Full-Stack',
     image: Portfolio,
     contentType: 'project',
@@ -93,7 +93,7 @@ const projectsData = [
     subTitle: 'Site vitrine',
     title: 'WealthHealth',
     time: '20 jrs',
-    mission: 'Side Project',
+    mission: 'Side Project OCR',
     developpement: 'Front-End',
     image: HomeWealth,
     contentType: 'project',
@@ -107,7 +107,7 @@ const projectsData = [
     subTitle: 'Site vitrine',
     title: 'Kasa',
     time: '20 jrs',
-    mission: 'Side Project ',
+    mission: 'Side Project OCR ',
     developpement: 'Front-End',
     image: HomeKasa,
     contentType: 'project',
