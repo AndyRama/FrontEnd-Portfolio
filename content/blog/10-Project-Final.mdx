@@ -1,0 +1,67 @@
+---
+title: '🚀 Sass'
+excerpt: 'I-doctor'
+date: '2024-06-15'
+author: 'Andy Ramaroson'
+categories:
+  - title: 'Code'
+  - title: 'Concepte'
+type: 'Post'
+image: '/images/react2.jpg'
+---
+Pour le projet I-Doctor, voici une liste des features must-have et des relations pour la base de données relationnelle, adaptées aux besoins d'un cabinet médical :
+1. Gestion des Utilisateurs
+
+    Patients : Informations de base (nom, prénom, email, téléphone, etc.), historique médical, préférences, rendez-vous passés.
+    Médecins : Informations de base (nom, spécialité, qualifications, disponibilités, etc.).
+    Personnel Administratif : Accès restreint à certaines parties de l'application (gestion des rendez-vous, communication, etc.).
+    Rôles & Permissions : Utilisation de rôles pour restreindre l'accès aux fonctionnalités sensibles (médecins, patients, admins).
+
+2. Gestion des Rendez-vous
+
+    Rendez-vous : Date/heure, médecin, patient, statut (confirmé, annulé, en attente), raison de la consultation, notes des médecins.
+    Disponibilité : Horaire de disponibilité de chaque médecin, avec possibilité de gestion (annuler, modifier, bloquer des créneaux).
+    Notifications : Envoi automatique de rappels de rendez-vous par email ou SMS.
+
+3. Gestion des Dossiers Médicaux
+
+    Dossiers Médicaux : Historique des consultations, prescriptions, diagnostics, examens médicaux.
+    Documents Associés : Téléchargement de documents (radio, ordonnances, rapports de laboratoire).
+    Accès : Les patients peuvent accéder à leur propre dossier, les médecins peuvent accéder à ceux de leurs patients.
+
+4. Gestion des Paiements (si applicable)
+
+    Facturation : Suivi des paiements des consultations, création de factures.
+    Assurance : Suivi des remboursements ou des paiements par les assurances.
+
+5. Gestion des Notifications et Communications
+
+    Messagerie interne : Communication entre patients et médecins via l'application.
+    Notifications de statut : Pour les rendez-vous, résultats d'examen, rappels de consultation.
+
+6. Tableau de Bord Administratif
+
+    Suivi des rendez-vous : Vue d'ensemble des rendez-vous à venir, ceux passés, et les annulations.
+    Statistiques : Nombre de consultations, recettes, etc.
+    Gestion des absences : Suivi des médecins en vacances, maladies ou indisponibilités.
+
+Relations de la Base de Données (PostgreSQL)
+
+| Table              | Champs                                                                                    | Relations                                                                                      |
+|--------------------|-------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------|
+| **users**          | id (PK), first_name, last_name, email, password_hash, role (patient, médecin, administrateur), created_at, updated_at |                                                                                                 |
+| **patients**       | id (PK), user_id (FK vers users.id), phone, address, birth_date, etc., created_at, updated_at | 1 patient -> N rendez-vous, 1 patient -> N dossiers médicaux, 1 patient -> N paiements          |
+| **doctors**        | id (PK), user_id (FK vers users.id), specialty, available_times, qualification, etc., created_at, updated_at | 1 médecin -> N rendez-vous, 1 médecin -> N dossiers médicaux                                    |
+| **appointments**   | id (PK), patient_id (FK vers patients.id), doctor_id (FK vers doctors.id), date_time, status (confirmed, cancelled, pending), reason, notes, created_at, updated_at | N rendez-vous -> 1 patient, N rendez-vous -> 1 médecin                                          |
+| **medical_records**| id (PK), patient_id (FK vers patients.id), doctor_id (FK vers doctors.id), diagnosis, treatment, prescriptions, documents, created_at, updated_at | N dossiers médicaux -> 1 patient, N dossiers médicaux -> 1 médecin                             |
+| **payments**       | id (PK), patient_id (FK vers patients.id), amount, status (paid, pending, refunded), created_at, updated_at | N paiements -> 1 patient                                                                      |
+| **notifications**  | id (PK), user_id (FK vers users.id), message, type (reminder, message, alert), status (unread, read), created_at, updated_at | 1 notification -> 1 utilisateur                                                                |
+
+
+Exemples de Relations
+
+    1 patient -> N rendez-vous
+    1 médecin -> N rendez-vous
+    1 patient -> N dossiers médicaux
+    1 médecin -> N dossiers médicaux
+    1 patient -> N paiements

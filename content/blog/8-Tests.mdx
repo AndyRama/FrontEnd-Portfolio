@@ -1,0 +1,69 @@
+---
+title: '🚀 partie 8. Tester les composants React (Client Components)'
+excerpt: ' Tester les composants React (Client & Server Components), la logique métier, et la persistance des données.'
+date: '2024-06-15'
+author: 'Andy Ramaroson'
+categories:
+  - title: 'Code'
+  - title: 'Concepte'
+type: 'Post'
+image: '/images/react2.jpg'
+---
+
+🚀 8. Tester les composants React (Client Components)
+
+    Mise en place des outils de test
+        Installation de Vitest et React Testing Library.
+        Configuration de l'environnement de test dans un projet Next.js.
+
+    Tests de rendu des composants
+        Vérifier que le composant se rend correctement avec des props données.
+        Exemple : expect(screen.getByText("Titre du composant")).toBeInTheDocument()
+
+    Tests d'interactions utilisateur
+        Simulation des clics, des saisies de texte, et des événements clavier.
+        Utilisation de fireEvent ou userEvent pour des interactions plus réalistes.
+
+    Simulation des hooks React
+        Tester des composants utilisant useState, useEffect, useReducer, etc.
+        Gestion des tests pour des comportements asynchrones avec async/await.
+
+⚡ 9. Tester les composants React Server Components (RSC)
+
+    Tests de rendu côté serveur
+        Utilisation de Vitest pour simuler le rendu des RSC dans Next.js.
+        Vérification des éléments statiques et dynamiques.
+
+    Simulation de l’hydratation et de la récupération des données
+        Tests de scénarios d'hydratation des composants côté client.
+        Mock des fonctions de récupération de données (fetch, getServerSideProps, etc.).
+
+🧠 10. Tests des Server Actions dans Next.js
+
+    Validation de la logique métier côté serveur
+        Tests des actions serveur avec des appels directs dans les tests.
+        Vérification des erreurs, des cas de réussite et des validations de formulaire.
+
+🗂️ 11. Tests de la couche service (logique métier Back-end)
+
+    Tests unitaires des services
+        Utilisation de Vitest pour des tests isolés de la logique métier.
+        Vérification des règles métiers complexes.
+
+    Mock des dépendances externes
+        Mocker les API externes, les accès aux bases de données (DAL).
+        Simulation des tokens JWT et des sessions pour des tests sécurisés.
+
+💾 12. Tests de la couche persistance (Base de données)
+
+    Tests des opérations CRUD
+        Utilisation de bases de données en mémoire (SQLite, PostgreSQL in-memory) pour des tests rapides.
+        Vérification des opérations Create, Read, Update, Delete sur les modèles de données.
+
+    Gestion des transactions et requêtes complexes
+        Tests de la gestion des transactions avec des outils comme Drizzle ORM.
+        Simulation de scénarios de concurrence de données.
+
+    Mock de la base de données
+        Utilisation de mocks ou de bases temporaires pour éviter de modifier les données de production.
+        Validation des migrations de la base de données et des relations entre les modèles.

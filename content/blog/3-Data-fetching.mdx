@@ -1,0 +1,215 @@
+---
+title: "Data Fetching, Server Actions & Validation"
+excerpt: "Dormir suffisamment et de manière régulière est aussi important que l'entraînement lui-même pour les athlètes de haut niveau."
+date: '2024-06-15'
+author: 'Andy Ramaroson'
+categories:
+  - title: 'NextJs'
+  - title: 'Framework'
+  - title: 'developpement'
+type: 'Post'
+image: '/images/nextjs1.png'
+---
+
+⚡️ Roadmap - Data Fetching, Server Actions & Validation (React 19 + Next.js)
+
+1. **Installation de ShadCN**
+
+    ShadCN UI : bibliothèque de composants UI basée sur Radix UI + Tailwind CSS.  
+    Installation :
+    ```bash
+    npx shadcn-ui@latest init
+    npm install @radix-ui/react-slot class-variance-authority tailwind-merge
+    npx shadcn-ui@latest add button
+    ```
+
+    Configuration de Tailwind si nécessaire (tailwind.config.js).
+
+2. **Fetch de Données Côté Client**
+
+    Utilisation de `useEffect` + `fetch()` pour récupérer des données depuis des APIs :
+    ```jsx
+    useEffect(() => {
+      fetch('/api/data')
+        .then(res => res.json())
+        .then(data => setData(data));
+    }, []);
+    ```
+
+    Utilisation de SWR ou React Query pour des stratégies de cache avancées.
+
+3. **Exposer des API REST avec Next.js**
+
+    Créer des endpoints dans `app/api` :
+    ```js
+    export async function GET() {
+      return Response.json({ message: 'Hello API!' });
+    }
+    ```
+
+    Gestion des méthodes HTTP (GET, POST, PUT, DELETE).
+
+4. **Fetch avec `use` de React 19**
+
+    Nouveau hook `use()` pour simplifier le data-fetching dans les composants serveur :
+    ```jsx
+    async function getData() {
+      return fetch('/api/data').then(res => res.json());
+    }
+
+    export default function Page() {
+      const data = use(getData());
+      return <div>{data.message}</div>;
+    }
+    ```
+
+5. **Fetch dans un RSC (React Server Component)**
+
+    Avantages : moins de JS côté client, performances optimisées.  
+    Exemple :
+    ```jsx
+    export default async function ServerComponent() {
+      const res = await fetch('https://api.example.com/data');
+      const data = await res.json();
+      return <div>{data.title}</div>;
+    }
+    ```
+
+6. **Appels BDD depuis un RSC**
+
+    Connexion directe à la base de données dans un Server Component :  
+    Utilisation de Prisma ou Drizzle ORM.
+    ```js
+    import { db } from '@/lib/db';
+
+    export default async function Users() {
+      const users = await db.user.findMany();
+      return <ul>{users.map(user => <li key={user.id}>{user.name}</li>)}</ul>;
+    }
+    ```
+
+7. **Les Server Actions**
+
+    Permettent d’exécuter des fonctions côté serveur directement depuis le client :
+    ```js
+    'use server';
+
+    export async function addTodo(data) {
+      await db.todo.create({ data });
+    }
+    ```
+
+    Appel depuis un formulaire React sans API intermédiaire.
+
+8. **Application CRUD via les Server Actions**
+
+    Créer, Lire, Mettre à jour, Supprimer des données avec des Server Actions.  
+    Exemple : formulaire d’ajout avec `useFormState` pour gérer l’état.
+
+9. **Appeler un Server Action depuis le Client**
+
+    Utilisation de formulaires natifs :
+    ```jsx
+    <form action={addTodo}>
+      <input name="task" type="text" />
+      <button type="submit">Ajouter</button>
+    </form>
+    ```
+
+    Ou appel programmatique avec des hooks personnalisés.
+
+10. **Gestion des Erreurs Côté Client (RCC)**
+
+    Utilisation de `ErrorBoundary` de React pour capturer les erreurs d’UI.  
+    Gestion des erreurs dans des hooks avec `try/catch` + états d’erreurs.
+
+11. **Gestion des Erreurs Côté Serveur (RSC)**
+
+    Gestion des erreurs dans les Server Components avec des `try/catch`.  
+    Utilisation de `error.tsx` dans les dossiers de pages Next.js.
+
+12. **Cache et `revalidatePath`**
+
+    Mise en cache des données avec `fetch()` et contrôle via `revalidatePath` :
+    ```js
+    import { revalidatePath } from 'next/cache';
+
+    export async function action() {
+      await db.update();
+      revalidatePath('/dashboard');
+    }
+    ```
+
+    Optimisation du rechargement des données après des mutations.
+
+13. **La Sérialisation**
+
+    Problèmes de sérialisation avec des objets complexes (Date, Map, etc.).  
+    Utilisation de `superjson` ou `JSON.stringify` pour les données non sérialisables.
+
+14. **Optimistic UI avec `useOptimistic` de React 19**
+
+    Mise à jour de l’interface utilisateur avant la confirmation du serveur.
+    ```jsx
+    const [optimisticTodos, addOptimisticTodo] = useOptimistic(todos, (state, newTodo) => [...state, newTodo]);
+    ```
+
+    Amélioration de la réactivité des applications.
+
+15. **API `startTransition` de React 19**
+
+    Optimisation du rendu non-bloquant des mises à jour d’état :
+    ```jsx
+    import { startTransition } from 'react';
+
+    startTransition(() => {
+      setData(newData);
+    });
+    ```
+
+    Permet des mises à jour plus fluides pour des tâches lourdes.
+
+16. **Validation avec Zod**
+
+    Librairie de validation de schémas TypeScript-friendly.
+    ```js
+    import { z } from 'zod';
+
+    const schema = z.object({ name: z.string(), age: z.number() });
+    const result = schema.safeParse({ name: 'John', age: 25 });
+    ```
+
+17. **Validation Côté Client (React Hook Form)**
+
+    Intégration de `react-hook-form` pour la gestion des formulaires :
+    ```jsx
+    const { register, handleSubmit, formState: { errors } } = useForm();
+    ```
+
+    Combinaison avec Zod pour la validation des données.
+
+18. **Validation Côté Serveur (useActionState, useFormStatus, Server Actions)**
+
+    Validation des données directement dans les Server Actions :
+    ```js
+    'use server';
+
+    import { schema } from '@/lib/validation';
+
+    export async function createUser(formData) {
+      const result = schema.safeParse(formData);
+      if (!result.success) throw new Error('Invalid data');
+    }
+    ```
+
+19. **Validation FullStack - Gestion des Erreurs Backend**
+
+    Combinaison de validations côté client et côté serveur.  
+    Gestion des erreurs remontées du backend via des états d’erreur (`useFormState`).  
+    Exemple complet : formulaire de connexion avec validation des deux côtés.
+
+✅ **Exercices Pratiques**
+
+- Dashboard CRUD complet (avec Server Actions, validation Zod, Optimistic UI)
+- Formulaire de contact FullStack (validation client/serveur + gestion des erreurs)
+- To-Do App avancée (cache, revalidation, Optimistic UI)

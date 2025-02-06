@@ -1,0 +1,85 @@
+---
+title: 'Roadmap - Gestion Avancée des Routes dans Next.js'
+excerpt: "axée sur la gestion des routes dans Next.js, avec des concepts avancés pour maîtriser le routing de manière efficace"
+date: '2024-06-19'
+author: 'Andy Ramaroson'
+categories:
+  - title: 'NextJs'
+  - title: 'Framework'
+  - title: 'developpement'
+type: 'Post'
+image: '/images/nextjs.png'
+---
+
+🌐 Roadmap - Gestion Avancée des Routes dans Next.js
+
+1. Comment Créer une Route
+
+    Comprendre le File-Based Routing de Next.js :
+        Chaque fichier dans le dossier app ou pages = une route.
+        Exemple : app/about/page.tsx → accessible via /about.
+    Utilisation de next/link pour la navigation interne.
+    Navigation programmatique avec useRouter().push().
+
+2. Répertoires Non Routables
+
+    Utilisation des dossiers ( ) pour des répertoires non routables :
+        Exemple : app/(admin)/dashboard/page.tsx → URL = /dashboard, pas /admin/dashboard.
+    Utile pour organiser le code sans affecter l'URL finale.
+
+3. Les Routes Groupées
+
+    Regrouper des routes avec des dossiers logiques :
+        Exemple : app/(marketing)/home/page.tsx et app/(marketing)/contact/page.tsx.
+    Permet de créer des segments logiques pour des zones spécifiques de l’application (admin, marketing, etc.).
+
+4. Template vs Layout
+
+    Layout : Composant persistant entre les pages (header, sidebar, etc.).
+        Déclaré dans app/layout.tsx ou des sous-dossiers pour des layouts spécifiques.
+    Template : Similaire au layout, mais recrée le composant à chaque navigation (utile pour des pages avec des états spécifiques).
+
+5. Les Routes Parallèles
+
+    Afficher plusieurs vues indépendantes sur la même page grâce aux routes parallèles.
+        Exemple : afficher un chat en parallèle d’un dashboard.
+    Utilisation des slots nommés (@slot) pour gérer des vues secondaires.
+
+6. Slots et Routes Conditionnelles
+
+    Slots : Emplacements réservés pour injecter des composants spécifiques.
+    Routes Conditionnelles : Rendu de routes basé sur des conditions (authentification, permissions, etc.).
+        Exemple : afficher une route privée uniquement si l’utilisateur est connecté.
+
+7. Streaming / Loading
+
+    Utilisation du React Suspense pour le rendu en streaming des composants.
+    Ajout d’états de chargement personnalisés avec loading.tsx.
+    Optimisation du Time to First Byte (TTFB) pour de meilleures performances.
+
+8. Intercepter des Routes
+
+    Route Interception : Modifier le comportement d’une route sans en changer l’URL.
+        Exemple : ouvrir un modal sans recharger la page principale (grâce à @modal dans l’arborescence des fichiers).
+
+9. Les Routes Dynamiques
+
+    Création de routes dynamiques avec des paramètres :
+        Exemple : app/blog/[slug]/page.tsx → /blog/article-1.
+    Routes imbriquées et catch-all :
+        [...params].tsx pour capturer plusieurs segments d'URL.
+
+10. Files Conventions
+
+    Convention des fichiers Next.js pour la gestion des routes :
+        page.tsx → pour les pages.
+        layout.tsx → pour les layouts.
+        error.tsx → pour la gestion des erreurs.
+        loading.tsx → pour l’état de chargement.
+        template.tsx → pour des templates de pages.
+
+✅ Bonus : Exemples Pratiques
+
+    Créer un tableau de bord avec des routes imbriquées et des layouts conditionnels
+    Mise en place d’un blog avec des routes dynamiques, des modals et des routes protégées
+    Système de messagerie avec des routes parallèles et du streaming

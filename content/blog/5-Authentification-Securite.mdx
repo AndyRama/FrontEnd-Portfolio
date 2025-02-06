@@ -1,0 +1,205 @@
+---
+title: '🚀 Roadmap - Authentification & Sécurité avec Next.js'
+excerpt: "Authentification et la gestion des sessions avec Next.js. On y couvre des concepts clés comme la création de routes sécurisées, la gestion des tokens, les middlewares, et l'intégration de Next-Auth."
+date: '2024-06-17'
+author: 'Andy Ramaroson'
+categories:
+  - title: 'NextJs'
+  - title: 'Concepts'
+type: 'Post'
+image: '/images/perplexity-ai-vs-chatgpt.jpg'
+---
+
+🚀 Roadmap - Authentification & Sécurité avec Next.js
+
+1. Comprendre l'Authentification
+
+    Authentification (AuthN) : vérifier l'identité de l'utilisateur.
+    Autorisation (AuthZ) : contrôler l'accès aux ressources en fonction des rôles.
+    Types :
+        Session-based (Cookies)
+        Token-based (JWT)
+
+2. Créer des Routes Privées & Publiques
+
+    Routes publiques : accessibles à tous (ex : page d'accueil).
+    Routes privées : protégées par une vérification d'authentification.
+    Exemple de guard :
+
+    ```jsx
+    export default function ProtectedPage({ session }) {
+      if (!session) redirect('/login');
+      return <Dashboard />;
+    }
+    ```
+
+3. Formulaire de Connexion (Login Form)
+
+    Gestion de l’état, validation, gestion des erreurs :
+
+    ```jsx
+    const [email, setEmail] = useState('');
+    const [error, setError] = useState(null);
+
+    const handleSubmit = async (e) => {
+      e.preventDefault();
+      try {
+        await login({ email });
+      } catch (err) {
+        setError('Invalid credentials');
+      }
+    };
+    ```
+
+4. Création d’une Authentification avec Credentials & Persistance
+
+    Vérification des identifiants en base de données.
+    Persistance via cookies sécurisés.
+    Exemple de hash de mot de passe avec bcrypt :
+
+    ```jsx
+    const hashedPassword = await bcrypt.hash(password, 10);
+    ```
+
+5. Gérer l'Encryption / Salt
+
+    Salt : chaîne aléatoire ajoutée pour sécuriser les mots de passe.
+    Utilisation de bcrypt pour le hash + salt.
+
+6. Session Management avec Cookies
+
+    Stockage des tokens/session dans des cookies sécurisés (HTTPOnly).
+    Exemple :
+
+    ```jsx
+    cookies().set('session', token, { httpOnly: true, secure: true });
+    ```
+
+7. Session Management avec JWT (JSON Web Token)
+
+    Encodage des données utilisateur dans un token signé.
+    Exemple avec jsonwebtoken:
+
+    ```jsx
+    const token = jwt.sign({ userId: user.id }, 'secret', { expiresIn: '1h' });
+    ```
+
+8. Le DTO Pattern (Data Transfer Object)
+
+    Sécurise les échanges de données entre client et serveur.
+    Structure des données cohérente et validée.
+
+9. HOC (Higher-Order Component) pour la Session Utilisateur
+
+    Créer des HOC pour protéger des composants :
+
+    ```jsx
+    const withAuth = (Component) => (props) =>
+      props.session ? <Component {...props} /> : <Redirect to="/login" />;
+    ```
+
+10. Auth Redirection Côté Client
+
+    Redirection conditionnelle selon l’état de la session :
+
+    ```jsx
+    if (!session) router.push('/login');
+    ```
+
+11. Auth Redirection Côté Serveur
+
+    Vérification et redirection dès la phase SSR :
+
+    ```jsx
+    export async function getServerSideProps(context) {
+      const session = await getSession(context);
+      if (!session) return { redirect: { destination: '/login' } };
+      return { props: { session } };
+    }
+    ```
+
+12. Database Session Management
+
+    Stocker les sessions en base de données pour plus de persistance.
+    Utilisation d’une table dédiée aux sessions (ex : PostgreSQL, MongoDB).
+
+13. Session Strategy Pattern
+
+    Stratégie d'authentification flexible :
+        JWT Strategy pour des APIs stateless.
+        Database Strategy pour des sessions persistantes.
+
+14. Le Middleware Next.js
+
+    Interception des requêtes pour appliquer des règles globales (auth, redirection, etc.) :
+
+    ```jsx
+    export function middleware(req) {
+      const token = req.cookies.get('token');
+      if (!token) return NextResponse.redirect('/login');
+    }
+    ```
+
+15. Middleware - AuthZ (Authorization)
+
+    Gestion des permissions par rôle :
+
+    ```jsx
+    if (user.role !== 'admin') return NextResponse.redirect('/unauthorized');
+    ```
+
+16. Safe Action (Server Action Authorization)
+
+    Protection des Server Actions contre les abus :
+        Vérification du rôle et de la session avant d’exécuter des actions sensibles.
+
+17. Authentification avec Next-Auth
+
+    NextAuth.js simplifie la gestion de l'authentification :
+        Support des providers OAuth (Google, GitHub, etc.)
+        JWT, gestion des sessions, sécurisation des routes.
+
+    Installation :
+
+    ```bash
+    npm install next-auth
+    ```
+
+    Configuration :
+
+    ```jsx
+    import NextAuth from 'next-auth';
+    import CredentialsProvider from 'next-auth/providers/credentials';
+
+    export const authOptions = {
+      providers: [
+        CredentialsProvider({
+          authorize(credentials) {
+            const user = checkUser(credentials);
+            if (user) return user;
+            return null;
+          },
+        }),
+      ],
+      session: { strategy: 'jwt' },
+    };
+
+    export default NextAuth(authOptions);
+    ```
+
+18. Exercices Pratiques
+
+    - Système d'auth complet (login, register, dashboard sécurisé)
+    - Implémentation JWT + Cookies sécurisés
+    - App Next-Auth avec gestion des rôles (admin/user)
+
+---
+
+### Exemple de Hook `useEffect` :
+
+```jsx
+import { useEffect } from 'react';
+
+useEffect(() => {
+  console.log('Composant hydraté');
+}, []);

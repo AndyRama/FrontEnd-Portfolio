@@ -1,0 +1,176 @@
+---
+title: "🚀 Roadmap - Rendering, Performance & Advanced React (Next.js 14/15)"
+excerpt: "Optimisation axée sur le rendu statique et dynamique, l'optimisation des performances avec Next.js 14/15, ainsi que des concepts avancés de React Server Components (RSC)."
+date: '2024-06-21'
+author: 'Andy Ramaroson'
+categories:
+  - title: 'React'
+  - title: 'Développement'
+type: 'Post'
+image: '/images/react.jpeg'
+---
+
+🚀 Roadmap - Rendering, Performance & Advanced React (Next.js 14/15)
+
+1. **Comprendre le Static Rendering (SSG - Static Site Generation)**
+
+    Principe : génération des pages au moment du build.  
+    Utilisation de `generateStaticParams()` dans Next 14.  
+    Idéal pour les pages peu fréquentes (ex : landing pages).
+
+    ```js
+    export async function generateStaticParams() {
+      const posts = await fetchPosts();
+      return posts.map(post => ({ slug: post.slug }));
+    }
+    ```
+
+2. **Dynamic Rendering (SSR - Server-Side Rendering)**
+
+    Génération des pages à la volée à chaque requête.  
+    Idéal pour les contenus personnalisés ou en temps réel.  
+    Exemple avec un Server Component :
+
+    ```jsx
+    export default async function Page() {
+      const data = await fetch('https://api.example.com/data');
+      return <div>{data.title}</div>;
+    }
+    ```
+
+3. **Les Dynamic Functions**
+
+    Fonctions côté serveur exécutées à la demande, comme `headers()`, `cookies()`, `revalidatePath()`.  
+    Exemple : récupérer les cookies pour personnaliser le contenu :
+
+    ```js
+    import { cookies } from 'next/headers';
+
+    export default function Dashboard() {
+      const theme = cookies().get('theme');
+      return <div>{theme?.value}</div>;
+    }
+    ```
+
+4. **La Pré-génération de Pages Dynamiques**
+
+    Combinaison de SSG et SSR grâce à la pré-génération partielle.  
+    Exemple avec `generateStaticParams()` + fallback dynamique :
+
+    ```js
+    export const dynamicParams = true;
+    ```
+
+5. **Convertir en Rendu Dynamique**
+
+    Utilisation de `export const dynamic = 'force-dynamic'` pour forcer le rendu dynamique.  
+    Utile pour des pages nécessitant toujours des données à jour.
+
+6. **Rendu Dynamique avec Headers**
+
+    Accès aux headers HTTP pour du contenu dynamique :
+
+    ```js
+    import { headers } from 'next/headers';
+
+    export default function Page() {
+      const userAgent = headers().get('user-agent');
+      return <p>{userAgent}</p>;
+    }
+    ```
+
+7. **Rendu Dynamique avec Cookies**
+
+    Personnalisation du contenu grâce aux cookies.  
+    Lecture et écriture sécurisées via le module `cookies()`.
+
+8. **L’Impact de fetch dans un RSC**
+
+    `fetch()` côté serveur est automatiquement mis en cache par Next.js.  
+    Contrôle avec des options comme `cache: 'no-store'` ou `revalidate`.
+
+    ```js
+    await fetch('/api', { cache: 'no-store' });
+    ```
+
+9. **Les Options des Données Cache**
+
+    `force-cache` (par défaut), `no-store`, `revalidate` (durée en secondes).  
+    Optimisation des performances en ajustant la stratégie de cache.
+
+10. **La Différence Fondamentale entre Next 14 et Next 15**
+
+    Next 14 : Server Actions, App Router stable, Optimistic UI natif.  
+    Next 15 : améliorations sur le streaming, la gestion du cache, compatibilité avec React 19 (use(), useOptimistic, startTransition optimisé).
+
+11. **Le Streaming Avancé**
+
+    Amélioration des performances grâce au streaming des données.  
+    Utilisation de `Suspense` pour afficher des données dès qu’elles sont prêtes.
+
+12. **Loading / Skeleton avec Suspense**
+
+    Créer des interfaces réactives en affichant des loaders pendant le chargement :
+
+    ```jsx
+    import { Suspense } from 'react';
+
+    export default function Page() {
+      return (
+        <Suspense fallback={<Loading />}>
+          <DataComponent />
+        </Suspense>
+      );
+    }
+    ```
+
+13. **Le Problème des Librairies Externes Côté Client avec Next**
+
+    Certaines librairies ne supportent pas bien les environnements SSR.  
+    Solutions :
+    - Forcer l’exécution côté client avec `'use client'`.
+    - Chargement dynamique avec `dynamic(import('lib'), { ssr: false })`.
+
+14. **use server, use client, server-only, et use cache**
+
+    `'use server'` : marque une fonction pour l'exécution côté serveur.  
+    `'use client'` : pour les composants React classiques.  
+    `server-only` : empêche l'importation accidentelle côté client.  
+    `use cache` : améliore la gestion du cache des données.
+
+15. **Composition Patterns**
+
+    Techniques pour structurer les composants de manière réutilisable :
+    - Compound Components
+    - Render Props
+    - HOC (Higher-Order Components)
+    - Hooks personnalisés
+
+16. **RCC / RSC et RCIC (React Contextual Isomorphic Component)**
+
+    RCC (React Client Component) : composants qui tournent côté client.  
+    RSC (React Server Component) : exécutés côté serveur.  
+    RCIC : composants hybrides capables de s'adapter au contexte client/serveur.
+
+17. **L'Hydratation en Profondeur**
+
+    Processus par lequel React "réactive" l'interactivité côté client.  
+    Optimisation : éviter le sur-rendu inutile, préférer les Server Components pour des parties statiques.
+
+18. **Render Après Hydration**
+
+    Utilisation de `useEffect` pour effectuer des actions après l’hydratation :
+
+    ```jsx
+    useEffect(() => {
+      console.log('Composant hydraté');
+    }, []);
+    ```
+
+    Utile pour des interactions DOM directes ou des appels API post-hydratation.
+
+✅ **Exercices Pratiques**
+
+- App Dashboard (SSG + SSR + Dynamic Rendering)
+- Streaming App (Optimistic UI + Suspense + Server Actions)
+- Formulaire FullStack (Validation, Hydratation, Erreurs Server/Client)
