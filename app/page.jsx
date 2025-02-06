@@ -14,21 +14,21 @@ import Idoctor from './../public/images/i-doctor.png'
 // import Subscribe from './components/Subscribe'
 
 const projectsData = [
-  {
-    Component: ProjectBannerR,
-    subTitle: 'Site vitrine',
-    title: 'I-doctor.fr',
-    time: 'en cours',
-    mission: 'Side project',
-    developpement: 'Full-Stack',
-    image: Idoctor,
-    contentType: '',
-    btn: { href: 'projects/I-doctor' },
-    btn1: { href: '#' },
-    description: `i-Doctor est une plateforme innovante permettant de mettre en service une prise de rendez-vous par téléphone avec un assistant I.A.
-                  Elle permet aux médecins de planifier facilement leurs consultations par téléphone, tout en optimisant efficacement la gestion de 
-                  leur emploi du temps.`,
-  },
+  // {
+  //   Component: ProjectBannerR,
+  //   subTitle: 'Site vitrine',
+  //   title: 'I-doctor.fr',
+  //   time: 'en cours',
+  //   mission: 'Side project',
+  //   developpement: 'Full-Stack',
+  //   image: Idoctor,
+  //   contentType: '',
+  //   btn: { href: 'projects/I-doctor' },
+  //   btn1: { href: '#' },
+  //   description: `i-Doctor est une plateforme innovante permettant de mettre en service une prise de rendez-vous par téléphone avec un assistant I.A.
+  //                 Elle permet aux médecins de planifier facilement leurs consultations par téléphone, tout en optimisant efficacement la gestion de 
+  //                 leur emploi du temps.`,
+  // },
   {
     Component: ProjectBanner,
     subTitle: 'Site vitrine',
