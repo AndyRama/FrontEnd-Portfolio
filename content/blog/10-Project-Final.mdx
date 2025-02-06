@@ -46,22 +46,3 @@ Pour le projet I-Doctor, voici une liste des features must-have et des relations
     Gestion des absences : Suivi des médecins en vacances, maladies ou indisponibilités.
 
 Relations de la Base de Données (PostgreSQL)
-
-| Table              | Champs                                                                                    | Relations                                                                                      |
-|--------------------|-------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------|
-| **users**          | id (PK), first_name, last_name, email, password_hash, role (patient, médecin, administrateur), created_at, updated_at |                                                                                                 |
-| **patients**       | id (PK), user_id (FK vers users.id), phone, address, birth_date, etc., created_at, updated_at | 1 patient -> N rendez-vous, 1 patient -> N dossiers médicaux, 1 patient -> N paiements          |
-| **doctors**        | id (PK), user_id (FK vers users.id), specialty, available_times, qualification, etc., created_at, updated_at | 1 médecin -> N rendez-vous, 1 médecin -> N dossiers médicaux                                    |
-| **appointments**   | id (PK), patient_id (FK vers patients.id), doctor_id (FK vers doctors.id), date_time, status (confirmed, cancelled, pending), reason, notes, created_at, updated_at | N rendez-vous -> 1 patient, N rendez-vous -> 1 médecin                                          |
-| **medical_records**| id (PK), patient_id (FK vers patients.id), doctor_id (FK vers doctors.id), diagnosis, treatment, prescriptions, documents, created_at, updated_at | N dossiers médicaux -> 1 patient, N dossiers médicaux -> 1 médecin                             |
-| **payments**       | id (PK), patient_id (FK vers patients.id), amount, status (paid, pending, refunded), created_at, updated_at | N paiements -> 1 patient                                                                      |
-| **notifications**  | id (PK), user_id (FK vers users.id), message, type (reminder, message, alert), status (unread, read), created_at, updated_at | 1 notification -> 1 utilisateur                                                                |
-
-
-Exemples de Relations
-
-    1 patient -> N rendez-vous
-    1 médecin -> N rendez-vous
-    1 patient -> N dossiers médicaux
-    1 médecin -> N dossiers médicaux
-    1 patient -> N paiements
