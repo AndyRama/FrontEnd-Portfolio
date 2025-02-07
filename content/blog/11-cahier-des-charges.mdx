@@ -1,0 +1,175 @@
+---
+title: '🚀 Sass'
+excerpt: 'I-doctor'
+date: '2024-06-15'
+author: 'Andy Ramaroson'
+categories:
+  - title: 'Code'
+  - title: 'Concepte'
+type: 'Post'
+image: '/images/react2.jpg'
+---
+
+Cahier des Charges - Application de Prise de Rendez-vous (Type Doctolib)
+
+1. Présentation du Projet
+
+Nom du projet : DoctoKillerObjectif : Créer une plateforme de gestion de rendez-vous médicaux pour les cabinets médicaux, permettant aux patients de prendre des rendez-vous en ligne et aux médecins de gérer leur emploi du temps efficacement.
+
+2. Fonctionnalités Clés
+
+a. Pour les Patients :
+
+Inscription / Connexion (authentification sécurisée)
+
+Recherche de médecins par spécialité, localisation, disponibilités
+
+Prise de rendez-vous en ligne avec sélection des créneaux
+
+Gestion des rendez-vous (modification, annulation)
+
+Notifications par email/SMS (rappels de rendez-vous)
+
+Historique des rendez-vous
+
+b. Pour les Médecins :
+
+Inscription / Connexion
+
+Gestion du calendrier (création de créneaux de disponibilité)
+
+Consultation des rendez-vous planifiés
+
+Notifications pour nouveaux rendez-vous
+
+Gestion des dossiers patients (notes, suivi)
+
+Statistiques de fréquentation
+
+c. Pour les Administrateurs :
+
+Gestion des utilisateurs (patients et médecins)
+
+Supervision des activités de la plateforme
+
+Gestion des contenus (FAQ, CGU, etc.)
+
+3. User Stories
+
+a. Utilisateur Patient
+
+En tant que patient, je veux m'inscrire rapidement pour accéder à la prise de rendez-vous.
+
+En tant que patient, je veux rechercher un médecin par spécialité pour trouver rapidement un professionnel adapté.
+
+En tant que patient, je veux recevoir des rappels par SMS afin de ne pas oublier mes rendez-vous.
+
+b. Utilisateur Médecin
+
+En tant que médecin, je veux gérer mes créneaux horaires pour organiser facilement mon planning.
+
+En tant que médecin, je veux consulter la liste de mes rendez-vous à venir.
+
+En tant que médecin, je veux ajouter des notes sur mes patients pour un meilleur suivi médical.
+
+c. Utilisateur Administrateur
+
+En tant qu'administrateur, je veux pouvoir gérer les comptes utilisateurs pour assurer la sécurité de la plateforme.
+
+En tant qu'administrateur, je veux accéder à des statistiques d'utilisation de la plateforme.
+
+4. Modèle de Base de Données (Schéma DB)
+
+Tables Principales :
+
+Users (patients et médecins)
+
+id (PK)
+
+name
+
+email (unique)
+
+password (hashé)
+
+role ("patient", "doctor", "admin")
+
+Doctors
+
+id (PK, FK vers Users)
+
+specialty
+
+phone_number
+
+address
+
+Patients
+
+id (PK, FK vers Users)
+
+date_of_birth
+
+phone_number
+
+Appointments
+
+id (PK)
+
+patient_id (FK vers Patients)
+
+doctor_id (FK vers Doctors)
+
+date_time
+
+status ("scheduled", "completed", "canceled")
+
+Availability
+
+id (PK)
+
+doctor_id (FK vers Doctors)
+
+start_time
+
+end_time
+
+Notifications
+
+id (PK)
+
+user_id (FK vers Users)
+
+message
+
+status ("sent", "pending")
+
+MedicalRecords
+
+id (PK)
+
+patient_id (FK vers Patients)
+
+doctor_id (FK vers Doctors)
+
+notes
+
+date_created
+
+5. Contraintes Techniques
+
+Technologies : React, Next.js, Tailwind CSS, Prisma, PostgreSQL
+
+Sécurité : Authentification JWT, chiffrement des données sensibles
+
+Hébergement : Vercel
+
+6. Planning Prévisionnel
+
+Semaine 1 : Analyse des besoins et conception du schéma DB
+
+Semaine 2 : Développement des modules d'authentification et gestion des utilisateurs
+
+Semaine 3 : Implémentation du système de prise de rendez-vous
+
+Semaine 4 : Tests, déploiement, et mise en production

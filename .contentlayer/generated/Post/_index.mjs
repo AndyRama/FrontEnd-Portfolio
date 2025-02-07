@@ -2,6 +2,11 @@
 
 import blog__1IntroductionMdx from './blog__1-Introduction.mdx.json' assert { type: 'json' }
 import blog__10ProjectFinalMdx from './blog__10-Project-Final.mdx.json' assert { type: 'json' }
+import blog__11CahierDesChargesMdx from './blog__11-cahier-des-charges.mdx.json' assert { type: 'json' }
+import blog__12Semaine_1Mdx from './blog__12-Semaine-1.mdx.json' assert { type: 'json' }
+import blog__13Semaine_2Mdx from './blog__13-Semaine-2.mdx.json' assert { type: 'json' }
+import blog__14Semaine_3Mdx from './blog__14-Semaine-3.mdx.json' assert { type: 'json' }
+import blog__15Semaine_4Mdx from './blog__15-Semaine-4.mdx.json' assert { type: 'json' }
 import blog__2RoutageMdx from './blog__2-Routage.mdx.json' assert { type: 'json' }
 import blog__3DataFetchingMdx from './blog__3-Data-fetching.mdx.json' assert { type: 'json' }
 import blog__4RenderingPerformanceMdx from './blog__4-Rendering-Performance.mdx.json' assert { type: 'json' }
@@ -10,4 +15,4 @@ import blog__7ArchitectureMdx from './blog__7-Architecture.mdx.json' assert { ty
 import blog__8TestsMdx from './blog__8-Tests.mdx.json' assert { type: 'json' }
 import blog__9CrAtionSaaSFullStackEntrepreneurMdx from './blog__9-Création-SaaS-FullStack-entrepreneur.mdx.json' assert { type: 'json' }
 
-export const allPosts = [blog__1IntroductionMdx, blog__10ProjectFinalMdx, blog__2RoutageMdx, blog__3DataFetchingMdx, blog__4RenderingPerformanceMdx, blog__5AuthentificationSecuriteMdx, blog__7ArchitectureMdx, blog__8TestsMdx, blog__9CrAtionSaaSFullStackEntrepreneurMdx]
+export const allPosts = [blog__1IntroductionMdx, blog__10ProjectFinalMdx, blog__11CahierDesChargesMdx, blog__12Semaine_1Mdx, blog__13Semaine_2Mdx, blog__14Semaine_3Mdx, blog__15Semaine_4Mdx, blog__2RoutageMdx, blog__3DataFetchingMdx, blog__4RenderingPerformanceMdx, blog__5AuthentificationSecuriteMdx, blog__7ArchitectureMdx, blog__8TestsMdx, blog__9CrAtionSaaSFullStackEntrepreneurMdx]

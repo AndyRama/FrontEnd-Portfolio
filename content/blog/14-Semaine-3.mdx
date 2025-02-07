@@ -1,0 +1,137 @@
+---
+title: '🚀 Sass'
+excerpt: 'I-doctor'
+date: '2024-06-15'
+author: 'Andy Ramaroson'
+categories:
+  - title: 'Code'
+  - title: 'Concepte'
+type: 'Post'
+image: '/images/react2.jpg'
+---
+
+Pour la Semaine 3, l’objectif est de mettre en place le système complet de prise de rendez-vous. Voici un plan détaillé qui décrit ce que tu devras réaliser en intégrant React, Next.js, Tailwind CSS, Prisma, PostgreSQL (hébergé sur neon db) et authJs pour l’authentification.
+
+1.  Interface Utilisateur (Front-end)
+    a. Création des pages et composants Next.js
+
+        Page de prise de rendez-vous :
+            Crée une page dédiée (ex. /appointments/new) où l’utilisateur (patient) peut sélectionner un créneau horaire, choisir un médecin et remplir les informations nécessaires.
+            Utilise React pour gérer l’état du formulaire et les interactions (sélection d’heure, validation en temps réel).
+
+        Affichage du calendrier et disponibilité :
+            Implémente un composant de calendrier qui affiche les créneaux disponibles pour chaque médecin.
+            Intègre des composants de sélection (date, heure) avec une UI moderne grâce à Tailwind CSS pour obtenir un rendu responsive et ergonomique.
+
+b. Intégration de l’authentification
+
+    Utilise authJs pour sécuriser les pages sensibles. Par exemple, la page de réservation doit être accessible uniquement aux utilisateurs connectés.
+    Met en place un système de gestion de sessions pour que les patients et les médecins puissent voir leurs rendez-vous et leur planning respectif.
+
+2.  Logique Métier et API (Back-end)
+    a. Développement des API routes avec Next.js
+
+        Création des routes API :
+            Par exemple, /api/appointments pour la création, la mise à jour, l’annulation et la récupération des rendez-vous.
+            Implémente des endpoints pour gérer les interactions CRUD (Create, Read, Update, Delete) avec le système de rendez-vous.
+
+        Validation et gestion des conflits :
+            Ajoute une logique pour vérifier la disponibilité d’un médecin avant de confirmer la prise de rendez-vous. Cette vérification peut se faire en consultant les créneaux existants dans la base de données.
+            Mets en place des règles pour éviter la réservation de créneaux déjà occupés ou en conflit.
+
+b. Sécurisation des endpoints
+
+    Utilise authJs dans tes API routes pour t’assurer que seul un utilisateur authentifié peut créer ou modifier un rendez-vous.
+    Gère les droits d’accès (par exemple, un patient ne doit pas pouvoir accéder aux données d’un autre patient ou aux paramètres internes d’un médecin).
+
+3.  Gestion de la Base de Données avec Prisma et PostgreSQL (Neon DB)
+    a. Modélisation des données
+
+        Schéma Prisma :
+            Mets à jour ton schéma Prisma pour inclure la table Appointments (ou RendezVous) avec des champs tels que :
+                id, patientId, doctorId, date_time, status, etc.
+            Assure-toi de définir les relations entre les tables (liens entre Users, Doctors, Patients et Appointments).
+
+b. Migrations et déploiement sur Neon DB
+
+    Crée et exécute les migrations nécessaires pour que ta base de données PostgreSQL soit à jour avec le schéma Prisma.
+    Configure la connexion à Neon DB dans ton projet Next.js en utilisant les variables d’environnement (ex. DATABASE_URL).
+    Teste la connexion et les requêtes pour vérifier que les opérations CRUD fonctionnent correctement sur la base de données.
+
+4.  Tests et Intégration
+    a. Tests fonctionnels
+
+        Tests de bout en bout (E2E) :
+            Utilise des outils comme Cypress ou Jest pour simuler le parcours de réservation d’un rendez-vous.
+            Vérifie que la validation du formulaire, la création de rendez-vous et les éventuels messages d’erreur s’affichent correctement.
+
+b. Tests d’intégration
+
+    Vérification des API routes :
+        Assure-toi que les endpoints REST fonctionnent comme prévu et renvoient les bons statuts HTTP (ex. 200, 400, 401).
+        Simule plusieurs scénarios (création d’un rendez-vous, tentative de réservation sur un créneau indisponible, etc.).
+
+c. Retour utilisateur et ajustements
+
+    Mets en place un système de notifications ou de retours visuels pour informer l’utilisateur de la réussite ou de l’échec de la prise de rendez-vous (par exemple, messages de confirmation ou alertes d’erreur).
+
+5. Points Techniques et Conseils
+
+   Utilisation de Tailwind CSS :
+   Profite de Tailwind pour rapidement prototyper une interface propre et responsive. Utilise des classes utilitaires pour les marges, le padding, les couleurs et les typographies.
+
+   Gestion des états avec React :
+   Pour des formulaires complexes, pense à utiliser des bibliothèques comme Formik ou React Hook Form pour simplifier la gestion et la validation des données.
+
+   Sécurisation via authJs :
+   Vérifie que toutes les routes protégées (tant côté front-end que côté back-end) redirigent vers une page de connexion en cas d’absence de session valide.
+   Assure-toi de la bonne gestion des tokens et des sessions pour éviter les problèmes de sécurité.
+
+   Prisma et migrations :
+   Teste régulièrement tes migrations en local avant de les pousser sur Neon DB.
+   Utilise les fonctionnalités de Prisma pour écrire des requêtes optimisées et gérer les relations entre les tables.
+
+En résumé, pour la Semaine 3, tu dois créer une interface utilisateur intuitive pour la prise de rendez-vous, développer les API correspondantes avec Next.js, sécuriser l’accès via authJs et intégrer l’ensemble dans une base de données PostgreSQL hébergée sur Neon DB en utilisant Prisma. Ce travail interconnecté permettra de proposer un système de réservation robuste et sécurisé, répondant aux besoins des patients et des médecins.
+
+---
+
+| **ID** | **Tâche**                                                                                           | **Priorité** | **Estimation** | **Statut** |
+|--------|-----------------------------------------------------------------------------------------------------|--------------|----------------|------------|
+| 1      | Création de la page de prise de rendez-vous (route `/appointments/new`)                             | High         | 4h             | À faire    |
+| 2      | Intégration d’un composant calendrier pour la sélection des créneaux                                | High         | 4h             | À faire    |
+| 3      | Développement des API routes pour la gestion des rendez-vous (CRUD : création, lecture, mise à jour, suppression) | High         | 6h             | À faire    |
+| 4      | Configuration d’authJs pour sécuriser l’accès aux pages et aux API                                   | High         | 3h             | À faire    |
+| 5      | Mise à jour du schéma de la base de données avec Prisma et déploiement sur Neon DB                   | High         | 4h             | À faire    |
+| 6      | Implémentation de la logique de validation et gestion des conflits de réservation                   | High         | 3h             | À faire    |
+| 7      | Rédaction et exécution des tests fonctionnels et tests d’intégration                                | Medium       | 4h             | À faire    |
+| 8      | Documentation et déploiement en environnement de staging                                           | Medium       | 2h             | À faire    |
+
+---
+
+Détails et Conseils pour Chaque Tâche
+
+    Création de la page de prise de rendez-vous :
+    Assure-toi d'intégrer une navigation fluide et de vérifier la réactivité de la page. L'utilisation de Tailwind CSS facilitera le prototypage rapide et l'ajustement des styles.
+
+    Composant calendrier :
+    Tu peux envisager l'utilisation d'une librairie existante ou créer un composant personnalisé qui interagit avec la base de données pour afficher en temps réel les disponibilités des médecins.
+
+    API Routes :
+    Les endpoints doivent être sécurisés et valider correctement les données envoyées par l'utilisateur. Pense à gérer les différents statuts des rendez-vous (planifié, annulé, terminé).
+
+    Configuration d’authJs :
+    La sécurisation des pages et des API est cruciale. Assure-toi que seules les sessions valides peuvent accéder aux fonctionnalités sensibles.
+
+    Schéma Prisma et migrations :
+    Vérifie que les relations entre les tables (patients, médecins, rendez-vous) sont bien définies et que les migrations se déroulent sans erreur sur Neon DB.
+
+    Validation de la réservation :
+    Implémente une logique robuste pour vérifier la disponibilité et éviter les conflits de créneaux. Un retour utilisateur clair (notifications, messages d'erreur) est essentiel.
+
+    Tests :
+    Une suite de tests bien conçue garantit la fiabilité du système. Les tests unitaires et E2E permettent de simuler différents scénarios et de détecter les bugs rapidement.
+
+    Documentation et déploiement :
+    La mise à jour de la documentation facilitera la prise en main pour les développeurs et la future maintenance du système. Le déploiement en staging permet de valider l’ensemble des fonctionnalités avant une mise en production.
+
+Ce backlog offre une vue complète des tâches à réaliser pendant la Semaine 3 pour l’implémentation du système de prise de rendez-vous, tout en intégrant les technologies clés du projet. Chaque tâche est décomposée pour faciliter la répartition du travail et assurer un suivi efficace du sprint.
