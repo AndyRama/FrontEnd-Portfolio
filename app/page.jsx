@@ -7,28 +7,42 @@ import UnlcoachingImage2 from './../public/images/unlcoaching2.png'
 import Portfolio from './../public/images/portfolio.png'
 import HomeKasa from './../public/images/HomeKasa.png'
 import HomeWealth from './../public/images/WealthHealth_1.png'
-import Idoctor from './../public/images/i-doctor.png'
+// import Idoctor from './../public/images/i-doctor.png'
+import HomeSegment from './../../public/images/home-segment.png'
+import HomeCabinet from './../../public/images/home-cabinet.png'
 
-// import HomePortfolio from './../../public/images/home-portfolio.png'
 // import RecentBlog from './components/RecentBlog'
 // import Subscribe from './components/Subscribe'
 
 const projectsData = [
-  // {
-  //   Component: ProjectBannerR,
-  //   subTitle: 'Site vitrine',
-  //   title: 'I-doctor.fr',
-  //   time: 'en cours',
-  //   mission: 'Side project',
-  //   developpement: 'Full-Stack',
-  //   image: Idoctor,
-  //   contentType: '',
-  //   btn: { href: 'projects/I-doctor' },
-  //   btn1: { href: '#' },
-  //   description: `i-Doctor est une plateforme innovante permettant de mettre en service une prise de rendez-vous par téléphone avec un assistant I.A.
-  //                 Elle permet aux médecins de planifier facilement leurs consultations par téléphone, tout en optimisant efficacement la gestion de 
-  //                 leur emploi du temps.`,
-  // },
+    {
+    Component: ProjectBanner,
+    subTitle: 'Site vitrine',
+    title: 'Segment-C.fr',
+    time: '30 jrs',
+    mission: 'Client Final',
+    developpement: 'Full-Stack',
+    image: HomeSegment,
+    contentType: 'project',
+    btn: { href: '#' },
+    btn1: { href: '#' },
+    description: `Segment C accompagne les propriétaires dans tous leurs projets de rénovation depuis plus de 15 ans.site vitrine pour portfolio réalisation , fourniture...`,
+  },
+  {
+    Component: ProjectBannerR,
+    subTitle: 'Site vitrine',
+    title: 'I-doctor.fr',
+    time: 'en cours',
+    mission: 'Side project',
+    developpement: 'Full-Stack',
+    image: HomeCabinet,
+    contentType: '',
+    btn: { href: 'projects/I-doctor' },
+    btn1: { href: '#' },
+    description: `i-Doctor est une plateforme innovante permettant de mettre en service une prise de rendez-vous par téléphone avec un assistant I.A.
+                  Elle permet aux médecins de planifier facilement leurs consultations par téléphone, tout en optimisant efficacement la gestion de 
+                  leur emploi du temps.`,
+  },
   {
     Component: ProjectBanner,
     subTitle: 'Site vitrine',
