@@ -1,10 +1,10 @@
 'use client'
 
+import Link from 'next/link'
 import React, { useState, useEffect, useRef, useCallback } from 'react'
 import { motion } from 'framer-motion'
 import { BiChevronLeft, BiChevronRight } from 'react-icons/bi'
 import Image from 'next/image'
-import Link from 'next/link'
 
 import { Swiper, SwiperSlide } from 'swiper/react'
 import 'swiper/css'
@@ -22,6 +22,26 @@ const recentProjectContent = {
     title: 'Les Projets',
   },
   recentProjects: [
+        {
+      img: '/images/segmentc.png',
+      title: 'Segment-C.fr',
+      years: 'juin. 2025',
+      type: 'Site vitrine',
+      name: 'Rui Decalvos',
+      role: 'Entrepreneur batiment',
+      quote:
+        "Ayant à présent un développeur web capable de transformer mes idées ambitieuses en solutions numériques, J'ai demandé à Andy de réaliser un autre project pour moi. Un site web vitrine avec un blog présentant mon activité de coaching, on a réalisé la maquette ensemble puis l'a intégrée pour me livrer un site web responsive et performant.",
+    },
+    {
+      img: '/images/Express3.png',
+      title: 'Lemurian',
+      years: ' Avril 2024',
+      type: 'site complet',
+      name: 'Stephane Brunie',
+      role: 'Artisan Batiment',
+      quote:
+        'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia ipsum consectetur repellat, corporis eaque corrupti in dolores reprehenderit, enim consequatur dolore, nam praesentium sint veniam ad recusandae ab amet impedit  consectetur repellat, corporis eaque corrupti in dolores reprehenderit, enim consequatur dolore, nam praesentium sint veniam ad recusandae ab amet impedit !',
+    },
     {
       img: '/images/unlcoaching.png',
       title: 'Unlcoaching.com',

@@ -105,7 +105,7 @@ export default function Hero1() {
             >
               Développeur FullStack JS basé à Bordeaux, spécialisé en React & NextJS. Je crée des applications web modernes sur mesure.
             </motion.p>
-            <motion.div
+            {/* <motion.div
               className="flex flex-wrap gap-4"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
@@ -117,7 +117,7 @@ export default function Hero1() {
               >
                 Prendre rendez-vous
               </Link>
-            </motion.div>
+            </motion.div> */}
           </motion.div>
 
           {/* Image Section */}
